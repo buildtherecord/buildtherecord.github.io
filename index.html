@@ -1,99 +1,129 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Build the Record — the record argues by existing</title>
+<title>Build the Record</title>
 <meta name="description" content="Free methods and AI prompts for building a professional-grade case file — for representing yourself, or for handing your lawyer a running start.">
 <style>
-:root{--ink:#23211c;--mut:#6b675e;--line:#e3e0d8;--blue:#1a4d8f;--paper:#faf9f6;--accent:#8a5a1f;}
-body{font:16px/1.65 -apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:var(--ink);margin:0;background:var(--paper);}
-.hero{background:#1f1d18;color:#f4f3ee;padding:56px 20px 48px;text-align:center;}
-.hero h1{font-size:38px;margin:0 0 6px;letter-spacing:-.01em;}
-.hero .motto{color:#ffd34d;font-size:18px;margin:0 0 18px;}
-.hero p{max-width:640px;margin:0 auto;color:#d8d2c0;font-size:16.5px;}
-.wrap{max-width:960px;margin:0 auto;padding:36px 20px 64px;}
-h2{font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin:36px 0 14px;}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px;}
-.card{border:1px solid var(--line);border-radius:10px;background:#fff;padding:18px 20px;}
-.card h3{margin:0 0 6px;font-size:17px;}
-.card p{margin:0 0 12px;color:var(--mut);font-size:14px;}
-.card a{display:inline-block;margin-right:14px;color:var(--blue);font-size:14px;}
-.doctrine{border-left:3px solid var(--blue);background:#f6f7fa;padding:16px 20px;font-size:15px;}
-.doctrine b{color:var(--blue);}
-.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px;margin-top:6px;}
-.aud{border:1px solid var(--line);border-radius:10px;background:#fff;padding:16px 20px;font-size:14.5px;}
-.aud b{display:block;margin-bottom:4px;}
-footer{border-top:1px solid var(--line);margin-top:48px;padding-top:18px;color:var(--mut);font-size:13px;}
-a{color:var(--blue);}
-.notlegal{background:#f4f3ee;border:1px solid var(--line);border-radius:8px;padding:12px 16px;font-size:13.5px;color:var(--mut);margin-top:26px;}
+:root{--ink:#111;--mut:#555;--hair:#111;--soft:#dcdcdc;}
+*{box-sizing:border-box;}
+body{font:16px/1.65 -apple-system,"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);margin:0;background:#fff;}
+a{color:var(--ink);text-decoration:underline;text-underline-offset:2px;}
+a:hover{background:var(--ink);color:#fff;text-decoration:none;}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px 72px;}
+.mast{border-bottom:2px solid var(--hair);padding:56px 0 28px;margin-bottom:8px;}
+.mast h1{font-size:clamp(40px,7vw,64px);line-height:1.02;margin:0;letter-spacing:-.02em;text-transform:uppercase;}
+.mast .motto{margin-top:14px;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink);}
+.lede{font-size:18px;max-width:640px;margin:26px 0 0;}
+.sec{margin-top:52px;}
+.sec > h2{font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 4px;font-weight:700;}
+.sec > h2 .no{display:inline-block;min-width:34px;}
+.rule{border:0;border-top:1px solid var(--hair);margin:0 0 22px;}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0;border:1px solid var(--hair);}
+.aud{padding:18px 22px;font-size:15px;}
+.aud + .aud{border-top:1px solid var(--hair);}
+@media(min-width:640px){.aud + .aud{border-top:0;border-left:1px solid var(--hair);}}
+.aud b{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px;}
+table.methods{width:100%;border-collapse:collapse;font-size:15px;border:1px solid var(--hair);}
+.methods th{text-align:left;font-size:11px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--hair);padding:10px 14px;font-weight:700;}
+.methods td{border-bottom:1px solid var(--soft);padding:14px;vertical-align:top;}
+.methods tr:last-child td{border-bottom:0;}
+.methods td:first-child{width:34%;font-weight:700;}
+.methods .d{color:var(--mut);font-size:13.5px;display:block;margin-top:3px;font-weight:400;}
+.doctrine{border-left:3px solid var(--ink);padding:4px 0 4px 22px;font-size:15.5px;max-width:680px;}
+.doctrine p{margin:0 0 12px;}
+.doctrine p:last-child{margin:0;}
+.note{border:1px solid var(--hair);padding:16px 20px;font-size:14px;max-width:680px;}
+.note b{font-size:12px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:6px;}
+footer{background:var(--ink);color:#fff;margin-top:72px;}
+footer .fw{max-width:880px;margin:0 auto;padding:26px 24px;font-size:13px;display:flex;gap:24px;flex-wrap:wrap;justify-content:space-between;}
+footer a{color:#fff;}
+footer a:hover{background:#fff;color:#111;}
 </style></head><body>
-<div class="hero">
-<h1>Build the Record</h1>
-<div class="motto">The record argues by existing.</div>
-<p>Free, open methods and AI prompts for building a professional-grade case file —
-the dated, verified, quote-them-verbatim paper record that wins reviews, appeals,
-and disputes, or hands your lawyer a running start. Born inside a real
-self-represented case; everything specific removed, everything repeatable kept.</p>
-</div>
 <div class="wrap">
 
-<h2>Who this is for</h2>
+<header class="mast">
+<h1>Build<br>the Record</h1>
+<div class="motto">The record argues by existing</div>
+<p class="lede">Free, open methods and AI prompts for building a professional-grade
+case file: the dated, verified, quote-them-verbatim paper record that wins reviews,
+appeals, and disputes — or hands your lawyer a running start. Developed inside a
+real self-represented case; everything specific removed, everything repeatable kept.</p>
+</header>
+
+<section class="sec">
+<h2><span class="no">§ 1</span> Who this is for</h2>
+<hr class="rule">
 <div class="two">
-<div class="aud"><b>Representing yourself.</b> The prompts walk an AI assistant through
-building your entire case file — inventory, timeline, ledgers, records requests,
-the adversarial review, the packet — while the decisions stay yours.</div>
-<div class="aud"><b>Preparing for a lawyer.</b> The same file is the one every attorney
-wishes clients brought to the first meeting: complete, dated, honestly curated,
-with your own weak points flagged for counsel instead of discovered by the other side.</div>
+<div class="aud"><b>Representing yourself</b>
+The prompts walk an AI assistant through building the entire case file — inventory,
+timeline, ledgers, records requests, adversarial review, the packet — while every
+decision that matters stays yours.</div>
+<div class="aud"><b>Preparing for counsel</b>
+The same file is the one every attorney wishes clients brought to the first
+meeting: complete, dated, honestly curated, with your own weak points flagged for
+your lawyer instead of discovered by the other side.</div>
 </div>
+</section>
 
-<h2>The methods</h2>
-<div class="cards">
-<div class="card"><h3>Vehicle defects &amp; lemon law</h3>
-<p>Repurchase claims: the component ledger, the defect timeline, the
-diagnostic-records request, the gated evidence site the manufacturer's reviewer
-actually opens.</p>
-<a href="https://github.com/buildtherecord/lemon-case-file">Method</a>
-<a href="https://buildtherecord.github.io/lemon-case-file/">Demo case file</a></div>
-<div class="card"><h3>Health-insurance denials</h3>
-<p>Deadlines first, then the claim-file request, the denial ledger, the appeal
-packet, external review, regulators. Under 1% of denials are appealed; a third
-of appeals win.</p>
-<a href="https://github.com/buildtherecord/health-insurance-case-file">Method</a>
-<a href="https://buildtherecord.github.io/health-insurance-case-file/">Demo appeal file</a></div>
-<div class="card"><h3>Contractor disputes</h3>
-<p>The payment-to-scope trace, the promise ledger, adverse admissions, the public
-permit record, the demand letter, the two-tier packet for counsel.</p>
-<a href="https://github.com/buildtherecord/contractor-case-file">Method</a>
-<a href="https://buildtherecord.github.io/contractor-case-file/">Demo case file</a></div>
-</div>
+<section class="sec">
+<h2><span class="no">§ 2</span> The methods</h2>
+<hr class="rule">
+<table class="methods">
+<tr><th>Domain</th><th>Materials</th></tr>
+<tr><td>Vehicle defects &amp; lemon law
+<span class="d">Component ledger · defect timeline · diagnostic-records request · gated evidence site</span></td>
+<td><a href="https://github.com/buildtherecord/lemon-case-file">Method</a> ·
+<a href="https://buildtherecord.github.io/lemon-case-file/">Demonstration case file</a></td></tr>
+<tr><td>Health-insurance denials
+<span class="d">Deadline board · claim-file request · denial ledger · appeal packet · external review</span></td>
+<td><a href="https://github.com/buildtherecord/health-insurance-case-file">Method</a> ·
+<a href="https://buildtherecord.github.io/health-insurance-case-file/">Demonstration appeal file</a></td></tr>
+<tr><td>Contractor disputes
+<span class="d">Payment-to-scope trace · promise ledger · public permit record · demand · two-tier packet</span></td>
+<td><a href="https://github.com/buildtherecord/contractor-case-file">Method</a> ·
+<a href="https://buildtherecord.github.io/contractor-case-file/">Demonstration case file</a></td></tr>
+</table>
+</section>
 
-<h2>The doctrine, short version</h2>
+<section class="sec">
+<h2><span class="no">§ 3</span> The doctrine, short form</h2>
+<hr class="rule">
 <div class="doctrine">
-One source of truth — every artifact generated from one catalogue, every number
-computed and asserted at build time. A document proves only what it shows.
-Quote them verbatim. Curate ruthlessly; never omit what would make you look
-dishonest. <b>The counterparty-file principle:</b> whoever decided against you
-assembled a file to do it — request it before you argue with it.
-<b>Adversarial review before sending:</b> have your own case attacked from the
-other side's perspectives, and fix what the hostile reading finds. State facts;
-the record argues by existing.
+<p>One source of truth: every artifact is generated from a single catalogue, and
+every number is computed and asserted at build time. A document proves only what
+it shows. Quote them verbatim. Curate ruthlessly; never omit what would make you
+look dishonest.</p>
+<p>The counterparty-file principle: whoever decided against you assembled a file
+to do it — request it before you argue with it.</p>
+<p>Adversarial review before sending: have your own case attacked from the other
+side's perspectives, and fix what the hostile reading finds. State facts. The
+record argues by existing.</p>
 </div>
+</section>
 
-<h2>Contribute</h2>
-<p>Every method improves when someone runs it. Prompt fixes from real use,
-per-jurisdiction signpost files (dated and cited — see any repo's
+<section class="sec">
+<h2><span class="no">§ 4</span> Contribute</h2>
+<hr class="rule">
+<p style="max-width:680px">Every method improves when someone runs it. Prompt fixes
+from real use, per-jurisdiction signpost files (dated and cited — see any repo's
 <code>jurisdictions/</code>), and anonymized outcomes are the contributions that
-compound. Real case documents are never accepted — the repos stay 100% synthetic.
-New domains are welcome: the fitness test is in each repo's story — disputes
-decided on paper, with a records right, a deadline ladder, and a lot of
-unrepresented people losing by default.</p>
+compound. Real case documents are never accepted: the repositories stay 100%
+synthetic. New domains are welcome where the fitness test holds — disputes decided
+on paper, with a records right, a deadline ladder, and many unrepresented people
+losing by default.</p>
+</section>
 
-<div class="notlegal"><b>Not legal advice.</b> These are methods for organizing
-evidence and process, not a substitute for a lawyer. Deadlines are real and
-jurisdiction-specific; the repos' own rule is that no deadline is ever taken
-from a template — everything is re-verified against primary sources at use.
-When the stakes are high, bring the record to counsel — that is half of what
-it is for.</div>
+<section class="sec">
+<div class="note"><b>Not legal advice</b>
+These are methods for organizing evidence and process, not a substitute for a
+lawyer. Deadlines are real and jurisdiction-specific; the repositories' own rule
+is that no deadline is ever taken from a template — everything is re-verified
+against primary sources at use. When the stakes are high, bring the record to
+counsel. That is half of what it is for.</div>
+</section>
 
-<footer>Apache-2.0 · <a href="https://github.com/buildtherecord">github.com/buildtherecord</a> ·
-Built as a mitzvah. <span style="white-space:nowrap">For the record.</span></footer>
-</div></body></html>
+</div>
+<footer><div class="fw">
+<span>Apache-2.0 · <a href="https://github.com/buildtherecord">github.com/buildtherecord</a></span>
+<span>Built as a mitzvah. For the record.</span>
+</div></footer>
+</body></html>
