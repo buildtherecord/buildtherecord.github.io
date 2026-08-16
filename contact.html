@@ -1,0 +1,152 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://buildtherecord.org/contact.html">
+<title>Contact — Build the Record</title>
+<meta name="description" content="Write to Build the Record — method questions, anonymized outcomes, jurisdiction contributions, lawyer volunteering. Read this before you write.">
+<style>
+:root{--ink:#111;--mut:#555;--hair:#111;--soft:#dcdcdc;}
+*{box-sizing:border-box;}
+body{font:16px/1.65 -apple-system,"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);margin:0;background:#fff;}
+a{color:var(--ink);text-decoration:underline;text-underline-offset:2px;}
+a:hover{background:var(--ink);color:#fff;text-decoration:none;}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px 72px;}
+.mast{border-bottom:2px solid var(--hair);padding:44px 0 24px;margin-bottom:8px;}
+.mast h1{font-size:clamp(30px,5vw,42px);line-height:1.05;margin:0;letter-spacing:-.01em;text-transform:uppercase;}
+.mast .crumb{font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px;}
+.sec{margin-top:44px;}
+.sec > h2{font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 4px;font-weight:700;}
+.sec > h2 .no{display:inline-block;min-width:34px;}
+.rule{border:0;border-top:1px solid var(--hair);margin:0 0 20px;}
+ol.gate{margin:0;padding-left:22px;font-size:15.5px;}
+ol.gate li{margin-bottom:12px;}
+ol.gate b{text-transform:uppercase;font-size:12.5px;letter-spacing:.1em;}
+form{border:1px solid var(--hair);padding:22px;}
+label{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin:18px 0 6px;}
+label:first-child{margin-top:0;}
+select,input,textarea{width:100%;border:1px solid var(--hair);background:#fff;color:var(--ink);
+  font:15px/1.5 inherit;padding:10px 12px;border-radius:0;}
+textarea{min-height:170px;resize:vertical;}
+select:focus,input:focus,textarea:focus{outline:2px solid var(--ink);outline-offset:1px;}
+.hint{font-size:12.5px;color:var(--mut);margin-top:5px;}
+.btnrow{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;align-items:center;}
+.btn{display:inline-block;border:2px solid var(--ink);padding:12px 22px;font-size:13px;
+  letter-spacing:.08em;text-transform:uppercase;font-weight:700;text-decoration:none;background:#fff;color:var(--ink);cursor:pointer;font-family:inherit;}
+.btn:hover{background:var(--ink);color:#fff;}
+.btn.inv{background:var(--ink);color:#fff;}
+.btn.inv:hover{background:#fff;color:var(--ink);}
+#copynote{font-size:13px;color:var(--mut);}
+.addr{font:14px ui-monospace,SFMono-Regular,Menlo,monospace;}
+footer{background:var(--ink);color:#fff;margin-top:64px;}
+footer .fw{max-width:760px;margin:0 auto;padding:24px;font-size:13px;display:flex;gap:24px;flex-wrap:wrap;justify-content:space-between;}
+footer a{color:#fff;}
+footer a:hover{background:#fff;color:#111;}
+</style></head><body>
+<div class="wrap">
+
+<header class="mast">
+<div class="crumb"><a href="/">Build the Record</a> / Contact</div>
+<h1>Before you write</h1>
+</header>
+
+<section class="sec">
+<h2><span class="no">&sect; 1</span> Read this first — it protects you</h2>
+<hr class="rule">
+<ol class="gate">
+<li><b>No one here is your lawyer.</b> This project cannot advise on your individual
+case, and writing to us does not create an attorney-client relationship. We publish
+methods for organizing evidence; we do not evaluate claims.</li>
+<li><b>If a deadline is near, act first.</b> Do not wait for a reply from us before
+filing an appeal, response, or notice that has a clock on it. A timely, imperfect
+filing preserves rights; a perfect email to us preserves nothing.</li>
+<li><b>Send no case documents.</b> No contracts, medical records, denial letters,
+photographs, or anything confidential — about your case or anyone else's. This
+mailbox is not a secure channel and the project never accepts real case files.
+Anything sent anyway will be deleted unread as far as practicable.</li>
+<li><b>A human reads this mailbox</b> — replies are written by a person and may take
+several days. If your situation is urgent, your state's legal-aid office or bar
+referral service is the right first call, not this address.</li>
+</ol>
+</section>
+
+<section class="sec">
+<h2><span class="no">&sect; 2</span> What this mailbox is for</h2>
+<hr class="rule">
+<p style="margin-top:0;font-size:15.5px;max-width:640px">Questions about using the
+methods; fixes and improvements from real use; anonymized outcomes (what held up,
+what didn't — with every identifying detail removed); jurisdiction signpost
+contributions; lawyers volunteering review time; press.</p>
+</section>
+
+<section class="sec">
+<h2><span class="no">&sect; 3</span> Write your message</h2>
+<hr class="rule">
+<form id="cf" onsubmit="return sendMail(event)">
+<label for="topic">What is this about</label>
+<select id="topic">
+<option value="Using the methods">Using the methods — a question</option>
+<option value="Improvement from real use">An improvement from real use</option>
+<option value="Anonymized outcome">An anonymized outcome</option>
+<option value="Jurisdiction contribution">A jurisdiction contribution</option>
+<option value="Lawyer volunteering">I practice law — volunteering time</option>
+<option value="Press">Press</option>
+<option value="Something else">Something else</option>
+</select>
+
+<label for="juris">Your state or jurisdiction <span style="font-weight:400">(optional)</span></label>
+<input id="juris" type="text" autocomplete="off" placeholder="e.g. Illinois">
+
+<label for="msg">Message</label>
+<textarea id="msg" required placeholder="Remember: no case documents, no confidential details."></textarea>
+<div class="hint">Submitting opens the message in your own email app, addressed to
+<span class="addr">mailbox@buildtherecord.org</span> — so a reply comes straight back
+to you, and nothing passes through a third party.</div>
+
+<div class="btnrow">
+<button class="btn inv" type="submit">Open in your email app</button>
+<button class="btn" type="button" onclick="copyMail()">Copy message + address instead</button>
+<span id="copynote"></span>
+</div>
+</form>
+<p class="hint" style="margin-top:14px">No email app configured? Copy the message and
+send it from any account to <span class="addr">mailbox@buildtherecord.org</span>.</p>
+</section>
+
+</div>
+<footer><div class="fw">
+<span><a href="/">buildtherecord.org</a> · <a href="https://github.com/buildtherecord">GitHub</a></span>
+<span>A human reads this. For the record.</span>
+</div></footer>
+
+<script>
+(function(){
+  var t = new URLSearchParams(location.search).get("type");
+  var map = { lawyer: "Lawyer volunteering", outcome: "Anonymized outcome",
+              jurisdiction: "Jurisdiction contribution", press: "Press" };
+  if (t && map[t]) document.getElementById("topic").value = map[t];
+})();
+function buildParts(){
+  var topic = document.getElementById("topic").value;
+  var juris = document.getElementById("juris").value.trim();
+  var msg = document.getElementById("msg").value.trim();
+  var subject = "[BTR] " + topic + (juris ? " — " + juris : "");
+  var body = msg + "\n\n—\nSent via buildtherecord.org/contact — I have read the four points at the top of that page.";
+  return { subject: subject, body: body };
+}
+function sendMail(ev){
+  ev.preventDefault();
+  var p = buildParts();
+  location.href = "mailto:mailbox@buildtherecord.org?subject=" +
+    encodeURIComponent(p.subject) + "&body=" + encodeURIComponent(p.body);
+  return false;
+}
+function copyMail(){
+  var p = buildParts();
+  var full = "To: mailbox@buildtherecord.org\nSubject: " + p.subject + "\n\n" + p.body;
+  navigator.clipboard.writeText(full).then(function(){
+    document.getElementById("copynote").textContent = "Copied — paste into any email.";
+  }, function(){
+    document.getElementById("copynote").textContent = "Copy failed — select and copy the message manually.";
+  });
+}
+</script>
+</body></html>
