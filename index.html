@@ -14,6 +14,24 @@ a:hover{background:var(--ink);color:#fff;text-decoration:none;}
 .mast h1{font-size:clamp(40px,7vw,64px);line-height:1.02;margin:0;letter-spacing:-.02em;text-transform:uppercase;}
 .mast .motto{margin-top:14px;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink);}
 .lede{font-size:18px;max-width:640px;margin:26px 0 0;}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;}
+.btn{display:inline-block;border:2px solid var(--ink);padding:12px 22px;font-size:14px;
+  letter-spacing:.08em;text-transform:uppercase;font-weight:700;text-decoration:none;}
+.btn:hover{background:var(--ink);color:#fff;}
+.btn.inv{background:var(--ink);color:#fff;}
+.btn.inv:hover{background:#fff;color:var(--ink);}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;}
+.mcard{border:1px solid var(--hair);display:flex;flex-direction:column;}
+.browser .chrome{background:var(--ink);color:#fff;display:flex;align-items:center;gap:10px;padding:8px 12px;}
+.browser .dots span{display:inline-block;width:9px;height:9px;border:1px solid #fff;border-radius:50%;margin-right:4px;}
+.browser .url{font:11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:#ccc;overflow:hidden;
+  text-overflow:ellipsis;white-space:nowrap;}
+.browser img{width:100%;display:block;border-bottom:1px solid var(--hair);}
+.mbody{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1;}
+.mbody h3{margin:0;font-size:16px;}
+.mbody .d{color:var(--mut);font-size:13.5px;flex:1;}
+.mlinks{display:flex;gap:10px;flex-wrap:wrap;}
+.mlinks .btn{padding:9px 14px;font-size:12px;}
 .sec{margin-top:52px;}
 .sec > h2{font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 4px;font-weight:700;}
 .sec > h2 .no{display:inline-block;min-width:34px;}
@@ -48,6 +66,10 @@ footer a:hover{background:#fff;color:#111;}
 case file: the dated, verified, quote-them-verbatim paper record that wins reviews,
 appeals, and disputes — or hands your lawyer a running start. Developed inside a
 real self-represented case; everything specific removed, everything repeatable kept.</p>
+<div class="cta">
+<a class="btn inv" href="https://buildtherecord.org/lemon-case-file/">See a demonstration case file</a>
+<a class="btn" href="https://github.com/buildtherecord">Get the methods on GitHub</a>
+</div>
 </header>
 
 <section class="sec">
@@ -66,23 +88,48 @@ your lawyer instead of discovered by the other side.</div>
 </section>
 
 <section class="sec">
-<h2><span class="no">§ 2</span> The methods</h2>
+<h2><span class="no">§ 2</span> The methods — and what a finished case file looks like</h2>
 <hr class="rule">
-<table class="methods">
-<tr><th>Domain</th><th>Materials</th></tr>
-<tr><td>Vehicle defects &amp; lemon law
-<span class="d">Component ledger · defect timeline · diagnostic-records request · gated evidence site</span></td>
-<td><a href="https://github.com/buildtherecord/lemon-case-file">Method</a> ·
-<a href="https://buildtherecord.org/lemon-case-file/">Demonstration case file</a></td></tr>
-<tr><td>Health-insurance denials
-<span class="d">Deadline board · claim-file request · denial ledger · appeal packet · external review</span></td>
-<td><a href="https://github.com/buildtherecord/health-insurance-case-file">Method</a> ·
-<a href="https://buildtherecord.org/health-insurance-case-file/">Demonstration appeal file</a></td></tr>
-<tr><td>Contractor disputes
-<span class="d">Payment-to-scope trace · promise ledger · public permit record · demand · two-tier packet</span></td>
-<td><a href="https://github.com/buildtherecord/contractor-case-file">Method</a> ·
-<a href="https://buildtherecord.org/contractor-case-file/">Demonstration case file</a></td></tr>
-</table>
+<p style="max-width:680px;margin-top:0">Each method produces a working case file. The
+demonstrations below are fully fictional, but the shape is the real product: the
+ledger of what they did in their own words, the timeline, the evidence grid, every
+document one click away.</p>
+<div class="cards">
+
+<div class="mcard">
+<div class="browser"><div class="chrome"><span class="dots"><span></span><span></span><span></span></span>
+<span class="url">buildtherecord.org/lemon-case-file</span></div>
+<a href="https://buildtherecord.org/lemon-case-file/"><img src="assets/shot-lemon.jpg" loading="lazy"
+alt="Demonstration lemon-law case file: swimlane timeline and exemplar recordings"></a></div>
+<div class="mbody"><h3>Vehicle defects &amp; lemon law</h3>
+<span class="d">Component ledger · defect timeline · diagnostic-records request · gated evidence site with an access log.</span>
+<div class="mlinks"><a class="btn inv" href="https://buildtherecord.org/lemon-case-file/">Open the demonstration</a>
+<a class="btn" href="https://github.com/buildtherecord/lemon-case-file">Method</a></div></div>
+</div>
+
+<div class="mcard">
+<div class="browser"><div class="chrome"><span class="dots"><span></span><span></span><span></span></span>
+<span class="url">buildtherecord.org/health-insurance-case-file</span></div>
+<a href="https://buildtherecord.org/health-insurance-case-file/"><img src="assets/shot-health.jpg" loading="lazy"
+alt="Demonstration insurance appeal file: deadline board and denial ledger"></a></div>
+<div class="mbody"><h3>Health-insurance denials</h3>
+<span class="d">Deadline board · claim-file request · denial ledger · appeal packet · external review. Under 1% of denials are appealed; a third of appeals win.</span>
+<div class="mlinks"><a class="btn inv" href="https://buildtherecord.org/health-insurance-case-file/">Open the demonstration</a>
+<a class="btn" href="https://github.com/buildtherecord/health-insurance-case-file">Method</a></div></div>
+</div>
+
+<div class="mcard">
+<div class="browser"><div class="chrome"><span class="dots"><span></span><span></span><span></span></span>
+<span class="url">buildtherecord.org/contractor-case-file</span></div>
+<a href="https://buildtherecord.org/contractor-case-file/"><img src="assets/shot-contractor.jpg" loading="lazy"
+alt="Demonstration contractor case file: payment-to-scope table and promise ledger"></a></div>
+<div class="mbody"><h3>Contractor disputes</h3>
+<span class="d">Payment-to-scope trace · promise ledger · public permit record · demand letter · two-tier packet for counsel.</span>
+<div class="mlinks"><a class="btn inv" href="https://buildtherecord.org/contractor-case-file/">Open the demonstration</a>
+<a class="btn" href="https://github.com/buildtherecord/contractor-case-file">Method</a></div></div>
+</div>
+
+</div>
 </section>
 
 <section class="sec">
