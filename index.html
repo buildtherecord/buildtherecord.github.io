@@ -62,6 +62,19 @@ table.methods{width:100%;border-collapse:collapse;font-size:15px;border:1px soli
 .callout .cta .btn:hover{background:#fff;color:var(--ink);}
 .callout .cta .btn.inv{background:#fff;color:var(--ink);padding:18px 34px;font-size:15.5px;}
 .callout .cta .btn.inv:hover{background:transparent;color:#fff;}
+@media(max-width:700px){
+  table.methods,table.methods tbody,table.methods tr,table.methods td{display:block;width:100%;}
+  table.methods thead{display:none;}
+  table.methods tr{border-bottom:1px solid var(--hair);padding:4px 0;}
+  table.methods tr:last-child{border-bottom:0;}
+  table.methods td{border-bottom:0;padding:6px 14px;}
+  table.methods td:first-child{width:auto;font-size:16px;padding-top:14px;}
+  table.methods td:nth-child(2){font:11px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--mut);}
+  table.methods td:last-child{padding-bottom:14px;}
+  .cta{flex-direction:column;}
+  .cta .btn{text-align:center;}
+}
 footer{background:var(--ink);color:#fff;margin-top:72px;}
 footer .fw{max-width:880px;margin:0 auto;padding:26px 24px;font-size:13px;display:flex;gap:24px;flex-wrap:wrap;justify-content:space-between;}
 footer a{color:#fff;}
@@ -72,43 +85,71 @@ footer a:hover{background:#fff;color:#111;}
 <header class="mast">
 <h1>Build<br>the Record</h1>
 <div class="motto">The record argues by existing</div>
-<p class="lede">Free, open methods and AI prompts for building a professional-grade
-case file: the dated, verified, quote-them-verbatim paper record that wins reviews,
-appeals, and disputes — or hands your lawyer a running start. Developed inside a
-real self-represented case; everything specific removed, everything repeatable kept.</p>
+<p class="lede">Free, step-by-step help putting the evidence in your dispute into
+order &mdash; dated, sourced, quoted exactly. The paper record that makes a company,
+a reviewer, or a lawyer take you seriously. Works on a phone. No account, no
+payment, no GitHub.</p>
 <div class="cta">
-<a class="btn inv" href="/start.html">I have a dispute — start here</a>
-<a class="btn" href="https://buildtherecord.org/lemon-case-file/">See a demonstration case file</a>
-<a class="btn" href="https://github.com/buildtherecord">Methods on GitHub</a>
+<a class="btn inv" href="/start.html">I have a dispute &mdash; start here</a>
+<a class="btn" href="https://buildtherecord.org/lemon-case-file/">See a finished example</a>
 </div>
-<p style="margin:16px 0 0;font-size:14.5px;color:var(--mut)">No account, no payment,
-no GitHub needed &mdash; <a href="/start.html">the guides work on a phone</a>.</p>
 </header>
 
 <section class="sec">
-<h2><span class="no">§ 1</span> Who this is for</h2>
+<h2><span class="no">&sect; 1</span> Start &mdash; pick your situation</h2>
 <hr class="rule">
 <div class="two">
-<div class="aud"><b>Representing yourself</b>
-The prompts walk an AI assistant through building the entire case file — inventory,
-timeline, ledgers, records requests, adversarial review, the packet — while every
-decision that matters stays yours.</div>
-<div class="aud"><b>Preparing for counsel</b>
-The same file is the one every attorney wishes clients brought to the first
-meeting: complete, dated, honestly curated, with your own weak points flagged for
-your lawyer instead of discovered by the other side.</div>
+<div class="aud"><b><a href="/guide/insurance.html">Health insurance denied a claim</a></b>
+They refused to pay for care, or to approve it in advance. Appeals run on a clock
+&mdash; open this today if a letter just arrived.</div>
+<div class="aud"><b><a href="/guide/car.html">A car that keeps breaking</a></b>
+Bought or leased, something keeps going wrong, and the dealer or manufacturer has
+not fixed it.</div>
+</div>
+<div class="two" style="border-top:0">
+<div class="aud"><b><a href="/guide/contractor.html">A contractor took the money</a></b>
+Paid for work on your home and it is unfinished, defective, or never started.</div>
+<div class="aud"><b><a href="/start.html">Not sure / something else</a></b>
+The method is the same for most disputes decided on paper. Start with the closest
+one &mdash; the steps translate.</div>
 </div>
 </section>
 
 <section class="sec">
-<h2><span class="no">§ 2</span> The methods — and what a finished case file looks like</h2>
+<h2><span class="no">&sect; 2</span> What is here</h2>
 <hr class="rule">
-<p style="max-width:680px;margin-top:0">Each method produces a working case file. The
-demonstrations below are fully fictional, but the shape is the real product: the
-ledger of what they did in their own words, the timeline, the evidence grid, every
-document one click away. <strong>To actually use a method, you do not need GitHub or a
-computer</strong> &mdash; each has a
-<a href="/start.html">step-by-step guide that works on a phone</a>.</p>
+<table class="methods">
+<thead><tr><th>What</th><th>How much</th><th>What it is for</th></tr></thead>
+<tbody>
+<tr><td>Step-by-step guides<span class="d">buildtherecord.org/guide</span></td><td>3</td>
+<td>Copy a step, paste it into any free AI assistant, work through in order. The
+way to actually use this.</td></tr>
+<tr><td>Methods<span class="d">the full written procedure</span></td><td>3 domains<span class="d">30 numbered steps</span></td>
+<td>Vehicle defects, health-insurance denials, contractor disputes. Each one an
+inventory, a timeline, ledgers, a records request, an adversarial pass, a packet.</td></tr>
+<tr><td>Demonstration case files</td><td>3</td>
+<td>Complete, fictional, and the real shape of the output.</td></tr>
+<tr><td>Jurisdiction signposts<span class="d">dated, cited, never a substitute for checking</span></td><td>3<span class="d">Illinois &times;2, ERISA plans</span></td>
+<td>Statutes, deadline rules, bodies. <strong>Thin, and honestly labelled as thin</strong>
+&mdash; adding your state is the most useful contribution there is.</td></tr>
+<tr><td>Worked exemplars<span class="d">real published opinions</span></td><td>3</td>
+<td>Cases where a manufacturer or insurer fought hard and the record decided it.</td></tr>
+<tr><td>Legal-review channel</td><td>open</td>
+<td>An issue form for practitioners. No git needed, ~30&ndash;60 minutes, one file.</td></tr>
+</tbody></table>
+<p style="max-width:680px;margin-top:16px;font-size:14.5px;color:var(--mut)">Everything
+is free and Apache-2.0. Nothing here collects your documents &mdash; the work happens
+between you and whichever AI assistant you choose.</p>
+</section>
+
+<section class="sec">
+<h2><span class="no">&sect; 3</span> What a finished case file looks like</h2>
+<hr class="rule">
+<p style="max-width:680px;margin-top:0">These are fully fictional, but the shape is
+the real output: the ledger of what they did in their own words, the timeline, the
+evidence grid, every document one click away. They are proof that the method
+produces something, not the place to begin &mdash;
+<a href="/start.html">begin here</a>.</p>
 <div class="cards">
 
 <div class="mcard">
@@ -151,7 +192,7 @@ alt="Demonstration contractor case file: payment-to-scope table and promise ledg
 </section>
 
 <section class="sec">
-<h2><span class="no">§ 3</span> The doctrine, short form</h2>
+<h2><span class="no">&sect; 4</span> The doctrine, short form</h2>
 <hr class="rule">
 <div class="doctrine">
 <p>One source of truth: every artifact is generated from a single catalogue, and
@@ -167,7 +208,7 @@ record argues by existing.</p>
 </section>
 
 <section class="sec">
-<h2><span class="no">§ 4</span> Contribute</h2>
+<h2><span class="no">&sect; 5</span> Contribute</h2>
 <hr class="rule">
 <p style="max-width:680px">Every method improves when someone runs it. Prompt fixes
 from real use, per-jurisdiction signpost files (dated and cited — see any repo's
@@ -180,7 +221,7 @@ losing by default. Questions, anonymized outcomes, and offers of help:
 </section>
 
 <section class="sec callout">
-<h2><span class="no">&sect; 5</span> For lawyers</h2>
+<h2><span class="no">&sect; 6</span> For lawyers</h2>
 <hr class="rule">
 <p style="max-width:680px;margin-top:0">An hour of a practitioner&rsquo;s time is the
 highest-leverage contribution this project can receive. What helps most: reviewing a
@@ -214,6 +255,6 @@ counsel. That is half of what it is for.</div>
 </div>
 <footer><div class="fw">
 <span>Apache-2.0 · <a href="https://github.com/buildtherecord">github.com/buildtherecord</a> · <a href="/contact.html">Contact</a> &middot; <a href="mailto:mailbox@buildtherecord.org">mailbox@buildtherecord.org</a></span>
-<span>Built as a mitzvah. For the record.</span>
+<span>Free and open. Volunteer-run.</span>
 </div></footer>
 </body></html>
