@@ -1,0 +1,477 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://buildtherecord.org/guide/car.html">
+<title>Car or truck that keeps breaking — Build the Record</title>
+<meta name="description" content="Step-by-step, on your phone. You bought or leased a vehicle, something keeps going wrong, and the dealer or manufacturer has not fixed it.">
+<style>
+:root{--ink:#111;--mut:#555;--hair:#111;--soft:#dcdcdc;--wash:#f4f4f4;}
+*{box-sizing:border-box;-webkit-text-size-adjust:100%;}
+body{font:17px/1.6 -apple-system,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:var(--ink);margin:0;background:#fff;}
+a{color:var(--ink);text-underline-offset:2px;}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px 80px;}
+.crumb{font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:22px 0 0;}
+.mast{border-bottom:2px solid var(--hair);padding:14px 0 22px;margin-bottom:8px;}
+.mast h1{font-size:clamp(26px,6.5vw,38px);line-height:1.1;margin:0 0 10px;
+  letter-spacing:-.01em;text-transform:uppercase;}
+.who{font-size:16px;color:var(--mut);margin:0;}
+.urgent{border:2px solid var(--ink);padding:14px 16px;margin:24px 0 0;font-size:15.5px;}
+.urgent b{text-transform:uppercase;font-size:12px;letter-spacing:.14em;display:block;margin-bottom:5px;}
+.sec{margin-top:38px;}
+.sec>h2{font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 4px;font-weight:700;}
+.rule{border:0;border-top:1px solid var(--hair);margin:0 0 18px;}
+.lede{font-size:16.5px;max-width:620px;}
+ol.plain{padding-left:20px;margin:0;}
+ol.plain li{margin-bottom:10px;}
+.step{border:1px solid var(--hair);margin:0 0 18px;}
+.step-h{display:flex;gap:14px;padding:16px 16px 12px;align-items:baseline;}
+.step-n{font:700 13px/1 ui-monospace,SFMono-Regular,Menlo,monospace;
+  border:1px solid var(--ink);padding:6px 8px;flex:none;}
+.step-t{margin:0;font-size:18px;line-height:1.3;}
+.step-d{color:var(--mut);font-size:14.5px;margin:2px 0 0;}
+.step-b{padding:0 16px 16px;}
+.btn{display:block;width:100%;border:2px solid var(--ink);background:var(--ink);color:#fff;
+  font:700 15px/1 inherit;letter-spacing:.06em;text-transform:uppercase;
+  padding:16px;cursor:pointer;text-align:center;border-radius:0;
+  -webkit-appearance:none;min-height:52px;}
+.btn:active{background:#fff;color:var(--ink);}
+.btn.sec2{background:#fff;color:var(--ink);margin-top:9px;}
+.btn.sec2:active{background:var(--ink);color:#fff;}
+.said{font-size:13.5px;color:var(--mut);text-align:center;margin:9px 0 0;min-height:19px;}
+details{margin-top:12px;border-top:1px solid var(--soft);padding-top:11px;}
+summary{font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;
+  cursor:pointer;padding:13px 0;min-height:44px;display:flex;align-items:center;}
+pre{white-space:pre-wrap;word-wrap:break-word;overflow-wrap:break-word;background:var(--wash);
+  border:1px solid var(--soft);padding:14px;font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;
+  margin:10px 0 0;}
+.after{background:var(--wash);border-left:3px solid var(--ink);padding:11px 14px;margin-top:12px;font-size:14.5px;}
+.after b{text-transform:uppercase;font-size:11px;letter-spacing:.14em;display:block;margin-bottom:4px;}
+.after p{margin:0 0 8px;} .after p:last-child{margin:0;}
+.after ul{margin:0;padding-left:18px;}
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px;}
+.tool{border:1px solid var(--hair);padding:14px 10px;text-align:center;font-size:14px;
+  text-decoration:none;font-weight:700;min-height:50px;display:flex;align-items:center;justify-content:center;}
+.tool:active{background:var(--ink);color:#fff;}
+.note{border:1px solid var(--hair);padding:15px 17px;font-size:14.5px;}
+.note b{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:5px;}
+footer{background:var(--ink);color:#fff;margin-top:56px;}
+footer .fw{max-width:720px;margin:0 auto;padding:22px 20px;font-size:13.5px;}
+footer a{color:#fff;}
+code{background:var(--wash);padding:1px 4px;font-size:.92em;}
+@media(min-width:620px){ .tools{grid-template-columns:repeat(4,1fr);} }
+</style></head><body>
+<div class="wrap">
+<div class="crumb"><a href="/">Build the Record</a> / <a href="/start.html">Start</a></div>
+<header class="mast">
+<h1>Car or truck that keeps breaking</h1>
+<p class="who">You bought or leased a vehicle, something keeps going wrong, and the dealer or manufacturer has not fixed it.</p>
+</header>
+
+<section class="sec">
+<h2>How this works</h2><hr class="rule">
+<ol class="plain">
+<li><strong>Open an AI assistant</strong> in another tab or app. Claude, ChatGPT,
+Gemini and Perplexity all have free versions. Any of them works.</li>
+<li><strong>Copy step 0 below and paste it in.</strong> That sets the rules.</li>
+<li><strong>Work through the steps in order.</strong> Copy, paste, then answer its
+questions and give it your documents when it asks.</li>
+</ol>
+<p class="lede" style="margin-top:14px">Each step builds on the one before it, so
+order matters. You do not have to finish in one sitting — the assistant can pick up
+where you left off if you tell it what you already did. Expect several hours across
+several days, not minutes.</p>
+<div class="tools"><a class="tool" href="https://claude.ai/" target="_blank" rel="noopener">Claude</a><a class="tool" href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT</a><a class="tool" href="https://gemini.google.com/" target="_blank" rel="noopener">Gemini</a><a class="tool" href="https://www.perplexity.ai/" target="_blank" rel="noopener">Perplexity</a></div>
+</section>
+
+<section class="sec">
+<h2>Step 0 — the rules</h2><hr class="rule">
+<div class="step">
+<div class="step-h"><span class="step-n">0</span>
+<div><h3 class="step-t">Paste this first, before anything else</h3>
+<p class="step-d">Tells the assistant how to behave: no invented facts, no guessing, quote things exactly.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 0" onclick="copyStep('p-00', this)">Copy step 0</button>
+<p class="said" id="said-p-00"></p>
+<details><summary>Show the text</summary><pre id="p-00">You are helping me build a vehicle-defect case file I may submit to the
+manufacturer, an arbitrator, or a court. Non-negotiable rules:
+1. Never state a fact without a primary source I actually possess. A screenshot
+   proves only what is visible in it. No reconstructed times, numbers, or quotes.
+2. Every count or duration in any output must be computed from the catalogue at
+   build time, with an assertion that fails the build on mismatch.
+3. Quote documents verbatim or not at all.
+4. State facts; never write legal argument into the record.
+5. Flag anything that reads as hyperbole, advocacy, or a padded count — including
+   things I wrote.
+6. If I ask for something that would misstate the record, say so plainly.
+7. Keep a running decisions file (append-only) recording every ruling I make, so
+   later sessions do not re-litigate them.</pre></details>
+</div></div>
+</section>
+
+<section class="sec">
+<h2>The steps</h2><hr class="rule">
+<div class="step">
+<div class="step-h"><span class="step-n">1</span>
+<div><h3 class="step-t">Make a list of everything you have</h3>
+<p class="step-d">Photos, videos, receipts, texts, emails, repair orders — one catalogue, nothing renamed.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 1" onclick="copyStep('p-01', this)">Copy step 1</button>
+<p class="said" id="said-p-01"></p>
+<details><summary>Show the text</summary><pre id="p-01">Inventory every piece of potential evidence for my vehicle defect claim. Sources to
+sweep: my photo/video exports, my documents folder, my email (search the dealer&#x27;s
+name, the manufacturer&#x27;s name, &quot;recall&quot;, &quot;repair&quot;, &quot;case #&quot;), and any cloud folders
+I give you access to.
+
+For each item record: filename, capture/creation date and time (from metadata where
+available — note when the date comes from metadata vs. filename vs. my memory), what
+it shows (one factual sentence describing only what is visible/audible), which
+problem it relates to, and a stable ID.
+
+Rules:
+- Byte-identical and near-duplicate captures: keep one, mark the rest as duplicates
+  with a pointer to the kept item. Never delete originals.
+- Grade honestly: does the capture demonstrate the defect, merely support context,
+  or show nothing usable? I will cut the last group later — your job now is honest
+  description, not selection.
+- OCR every screenshot (call logs, chat transcripts, app screens) and record only
+  the text actually legible in it.
+- Videos: note duration, and whether the defect is visible/audible or only narrated.
+- Flag items whose capture date conflicts with what they appear to show.
+- Do not rename or move any original file. Output a manifest (CSV or JSON) I can
+  review, with your duplicate/grade annotations.
+
+Also build the paper side: every repair order (RO), invoice, recall letter,
+technical service bulletin, dealer communication, and manufacturer letter. For each:
+date, document type, the exact quote of any decisive line (e.g. their stated reason
+for a repair, or &quot;could not verify&quot;), and where the original lives.</pre></details>
+<div class="after"><b>After this step</b><ul><li>Did it find your earliest evidence? Owners usually have older material than they remember — carrier-app screenshots, listing-app rejections, texts to family. Say what you remember reporting and when; ask the assistant to hunt for corroboration.</li><li>Review every &quot;duplicate&quot; call before accepting it.</li><li>The manifest date column is the spine of everything later. Spot-check ten rows.</li></ul></div></div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">2</span>
+<div><h3 class="step-t">Put it all on a timeline</h3>
+<p class="step-d">Every event in date order, in one file the rest of the work is built from.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 2" onclick="copyStep('p-02', this)">Copy step 2</button>
+<p class="said" id="said-p-02"></p>
+<details><summary>Show the text</summary><pre id="p-02">From the approved inventory (prompt 01), build a single JSON file — the bundle —
+that every later artifact will be generated from. Use the shape in
+`schema/bundle.schema.json` (adapt fields as needed, but keep: a `timeline` of dated
+events, `video`/`photos` catalogues with problem tags, a `componentLedger`, and any
+out-of-service stays with start/end dates).
+
+Rules:
+- Every entry carries its source: the file it came from, or the document that
+  states it. An event with no source does not go in.
+- Purchase, each defect report, each repair visit (arrival and pickup dates), each
+  recall (federal filing date, the date any stop-sale or &quot;no repair available&quot;
+  notice reached dealers, the date the fix reached this vehicle), each manufacturer
+  contact, each written communication.
+- Compute and store durations (days out of service, days from recall filing to
+  repair availability) as code, not as typed numbers. Where a long stay splits into
+  &quot;waiting for a remedy to exist&quot; vs. &quot;in repair&quot;, compute both parts.
+- Anything I told you from memory goes in a `scopeReviewQueue`, not the timeline,
+  until a source is found.
+- Cross-check dates: an RO&#x27;s printed dates beat a filename, which beats memory.
+  Record conflicts in the entry rather than silently choosing.
+- Sanity assertions at the end: no event before purchase; no repair pickup before
+  drop-off; every media item&#x27;s problem tag is one of the declared categories; every
+  timeline driveId/file reference resolves.
+
+Then print me: total events by type, total captures by problem, the five longest
+out-of-service spans, and everything in the review queue.</pre></details>
+<div class="after"><b>After this step</b><ul><li>Read the review queue completely. Approve, source, or delete each item.</li><li>Verify the out-of-service math against your own calendar memory once — then trust the bundle, not your memory, forever after.</li></ul></div></div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">3</span>
+<div><h3 class="step-t">Track every repair attempt</h3>
+<p class="step-d">What broke, what they said they did, and how many times it came back.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 3" onclick="copyStep('p-03', this)">Copy step 3</button>
+<p class="said" id="said-p-03"></p>
+<details><summary>Show the text</summary><pre id="p-03">From the repair orders in the bundle, build the component ledger: one row per
+part/system the manufacturer&#x27;s dealers touched.
+
+Each row: date range and RO number · component · what was done (replaced /
+reprogrammed / reset / inspected) · the dealer&#x27;s or manufacturer&#x27;s OWN stated basis,
+quoted verbatim from the RO (&quot;internal malfunction&quot;, &quot;concern verified, fault codes
+stored&quot;, &quot;could not verify&quot;, &quot;working as designed&quot;) · odometer · and the recurrence
+column: did the same symptom recur after this work, with the date and catalogue ID
+of the recurring capture.
+
+Rules:
+- The stated-basis quote must come off the RO text. If the RO is a photo, OCR it
+  and verify the quote against the image before using it.
+- Recurrence links must point to a specific dated capture or report in the bundle —
+  &quot;it kept happening&quot; is not a ledger entry.
+- Order rows so the story is visible: repeated work on the same component adjacent.
+- Compute the headline sentence from the ledger (e.g. &quot;N repairs to electrical
+  systems across M visits since &lt;date&gt;; K of N in the last year&quot;) with a build-time
+  assertion, and flag if the honest computation is weaker than what I&#x27;ve been
+  saying — I need to know that before the other side tells me.</pre></details>
+<div class="after"><b>After this step</b><p><strong>Why this artifact matters most.</strong> Repurchase standards everywhere turn on some version of: reported early, repaired repeatedly, recurred anyway. The ledger is that argument as a table, made entirely of the manufacturer&#x27;s own paper. Put it on page 1 of the PDF and near the top of the site.</p></div></div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">4</span>
+<div><h3 class="step-t">Rebuild your call history</h3>
+<p class="step-d">Who you called, when, and what was said — from records you actually have.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 4" onclick="copyStep('p-04', this)">Copy step 4</button>
+<p class="said" id="said-p-04"></p>
+<details><summary>Show the text</summary><pre id="p-04">Build the verified contact record between me and the manufacturer/dealers.
+
+Sources, in order of authority:
+1. Carrier usage records. Log into my carrier account (or I will export for you)
+   and pull call detail as far back as the online window goes. Extract only calls
+   matching the manufacturer&#x27;s and dealers&#x27; numbers — look up their published
+   numbers, and treat other numbers in the same dealership exchange as &quot;alternate
+   DID, same exchange&quot;, labeled as such.
+2. Older screenshots. Search my inventory for carrier-app or phone call-log
+   screenshots that predate the online window. Each row sourced to a specific
+   screenshot states ONLY what that screenshot legibly shows — time only if
+   visible, duration only if the row was expanded.
+3. The manufacturer&#x27;s own confirmations. Case-opened emails and post-call surveys
+   independently document contacts; cross-reference them by date.
+
+Output: a printable extract (title, my line number, date range, count) with one
+table for the carrier-window calls and a second table for screenshot-documented
+earlier calls, each row citing its source. Include an honest note about what
+predates the records and how it is documented instead.
+
+Rules:
+- An unmatched number stays unattributed (&quot;no match established — retained for
+  completeness&quot;), never guessed.
+- Voicemails: a screenshot of the voicemail entry is evidence of the call; the
+  audio is better — remind me to export it.
+- No call goes in from memory alone.
+
+Also: draft the message I should use in my carrier&#x27;s support chat asking how far
+back call detail can be retrieved and how to request older records, so I can push
+past the online window if it matters.</pre></details>
+<div class="after"><b>After this step</b><p><strong>Why.</strong> &quot;They never called us back&quot; is a feeling. Twelve outgoing calls to the dealership in a table, sourced to carrier records, is a fact — and the pattern (clusters around each incident) corroborates the rest of the timeline for free.</p></div></div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">5</span>
+<div><h3 class="step-t">Ask them for their own records</h3>
+<p class="step-d">Manufacturers keep diagnostic logs. Request them before you argue with them.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 5" onclick="copyStep('p-05', this)">Copy step 5</button>
+<p class="said" id="said-p-05"></p>
+<details><summary>Show the text</summary><pre id="p-05">From the bundle, generate a records request document, organized per demonstrated
+problem (not one flat list).
+
+For each problem: a heading, the count of recorded incidents, and the full list of
+incident timestamps from my catalogue. Exclude documentation screenshots (emails,
+apps, paperwork captures) from incident counts — padding a count is the fastest way
+to lose a reviewer&#x27;s trust. Add any reported-but-uncaptured incidents with the
+citation to the contemporaneous written report.
+
+The request paragraph asks for:
+1. Diagnostic session logs, stored fault memory, and any telematics/CAN data
+   covering the FULL CALENDAR DAY of each timestamp (adjacent day too where an
+   incident fell near midnight);
+2. Complete diagnostic logs from every service visit on this VIN;
+3. That any fault appearing in new or historic records be treated as reported by
+   me, whether or not I knew to connect it to my complaints.
+
+Do NOT request specific fault codes. Note that video/photo of the listed incidents
+is available at full resolution on request.
+
+Deliverables: a clean PDF, and a CSV of every timestamp (date, time, problem) so
+their engineers have no formatting excuse. Assert the total count in the header
+equals the rows generated.</pre></details>
+<div class="after"><b>After this step</b><ul><li>Spot-check five timestamps against the actual captures.</li><li>Send it WITH your evidence package and reference it in the cover email; a records request that arrives separately gets lost.</li></ul></div></div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">6</span>
+<div><h3 class="step-t">Build a private evidence website</h3>
+<p class="step-d">Optional and technical. A password-protected site you can share with one link.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 6" onclick="copyStep('p-06', this)">Copy step 6</button>
+<p class="said" id="said-p-06"></p>
+<details><summary>Show the text</summary><pre id="p-06">Build the case homepage from the bundle. Structure, top to bottom:
+
+1. **Banner** — what this is prepared for, with the case number.
+2. **Abstract** — four to six sentences, academic-abstract style, visually
+   distinct: the pattern of defects, the repair history in one line, the present
+   state, and a final line stating plainly what I am asking for and the decision
+   date if one is set. I will write or approve every word of this.
+3. **The record** — a few paragraphs of dated fact in plain language. Where a term
+   could be misread, define it in place (which screen, which part). Where we chose
+   not to film or couldn&#x27;t, say so. No legal vocabulary, no adjectives doing
+   argument&#x27;s work.
+4. **Component ledger** — the table from prompt 03, expandable rows.
+5. **Timeline strip** — horizontal swimlanes: recalls/bulletins as duration bars
+   (filing date → fix available → fix performed, with tick marks for milestones in
+   between), out-of-service stays as bars, calls as ticks, my reports and captures
+   as ticks. Tooltips carry date/title; clicking opens a modal with the thumbnail,
+   detail lines, and an &quot;Open the full document&quot; link.
+6. **Exemplar players** — the strongest few videos per problem, grouped by problem,
+   each captioned: title, date, and the one contextual fact that matters (e.g.
+   &quot;N days after &lt;part&gt; was replaced under &lt;RO&gt;&quot;). Short and factual.
+7. **Evidence grid** — every capture and every document as thumbnails with year
+   markers, filterable by problem and by kind (car evidence vs. paper). Documents
+   visually distinct from captures.
+8. **Records-request block** — summary of prompt 05&#x27;s request with download links.
+9. **Download cards** — the case PDF and the records request.
+
+Interaction rules learned the hard way:
+- Every document opens ITS OWN full-resolution original (PDF/image) in a new tab —
+  host the originals; never link a modal to some other summary page, and never
+  make a reviewer squint at a 400px thumbnail.
+- Videos: `preload=&quot;none&quot;`, poster images, Range-friendly hosting (the worker in
+  `site/` handles this) so scrubbing works.
+- Every count shown on the page is computed from the bundle at build time, with
+  assertions that fail the build on drift.
+- Exhibit numbers (see `templates/exhibit-scheme.md`) appear in modals, grid
+  captions, and document links, matching the PDF exactly.
+- No analytics, no external CDNs, no third-party requests: everything served from
+  the protected origin. The access log is the only telemetry.
+
+Before I send anything: screenshot the rendered page (including an open modal and
+a player) and show me.</pre></details>
+<div class="after"><b>After this step</b><ul><li>Click ten random grid cells and two timeline ticks; confirm each opens the right full document.</li><li>Read the abstract out loud. If any sentence sounds like a lawyer wrote it, rewrite it plainer.</li></ul></div></div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">7</span>
+<div><h3 class="step-t">Make the printable case file</h3>
+<p class="step-d">One PDF with a numbered index of every exhibit.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 7" onclick="copyStep('p-07', this)">Copy step 7</button>
+<p class="said" id="said-p-07"></p>
+<details><summary>Show the text</summary><pre id="p-07">Generate the printable case file from the bundle:
+
+1. Title page/header: vehicle, VIN, case numbers, &quot;prepared for &lt;review&gt;&quot;, date.
+2. The component ledger on page 1 — a reviewer who reads only one page should hit
+   the repair history, their own stated bases, and the recurrence column.
+3. The chronological record: every timeline event, dated, each with its exhibit
+   number, decisive quotes verbatim.
+4. Per-problem sections mirroring the site&#x27;s grouping.
+5. Exhibit index appendix: every exhibit number → date → one-line description, in
+   order, with class totals.
+
+Rules:
+- Exhibit numbers assigned deterministically (see `templates/exhibit-scheme.md`)
+  by code shared with the site build, so the two can never diverge.
+- Every computed number asserted at build. Filename includes the month and year.
+- Keep it under ~35 pages; the media catalogue is a listing here, not embedded
+  images (the site and full-resolution originals carry the media).
+- Render via headless browser to PDF; merge the appendix programmatically; verify
+  page count and spot-read pages 1, 2, and the appendix before delivering to me.</pre></details>
+<div class="after"><b>After this step</b><ul><li>Print page 1. If the ledger doesn&#x27;t fit or doesn&#x27;t land the recurrence story, fix that before anything else.</li><li>Check three exhibit numbers against the site&#x27;s modals — they must match.</li></ul></div></div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">8</span>
+<div><h3 class="step-t">Attack your own case before they do</h3>
+<p class="step-d">Have the assistant argue the other side, then fix what it finds.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 8" onclick="copyStep('p-08', this)">Copy step 8</button>
+<p class="said" id="said-p-08"></p>
+<details><summary>Show the text</summary><pre id="p-08">Attack my complete case package from six perspectives. For each, produce specific
+findings with locations, not general impressions.
+
+1. **Sympathetic insider.** You work at the manufacturer and want to approve this
+   cheaply and defensibly. What&#x27;s missing that you&#x27;d need to say yes? What would
+   you quietly wish the owner had included?
+2. **Manufacturer&#x27;s counsel.** You want an easy no. Find every overstated caption,
+   padded count, date inconsistency, unverifiable claim, and internal
+   contradiction. Find the thing the owner omitted that you possess and would
+   produce. What is your strongest paragraph against this record?
+3. **Journalist.** You might cover this. What can you independently verify? What
+   smells like advocacy? What would you cut before trusting it?
+4. **Another law firm.** You&#x27;re deciding whether to take this claimant. Does the
+   record hold up professionally? What&#x27;s amateur about it?
+5. **Another claimant.** You&#x27;re using this as a template. What here is specific to
+   this case but presented as if it were the method? What would mislead you?
+6. **Regulator.** Does anything here belong in a safety-defect report? Is anything
+   framed in a way that would embarrass the owner if quoted in a public docket?
+
+Then: consolidate into (a) fixes you can make now, (b) decisions only I can make,
+(c) risks we accept knowingly. Apply (a), queue (b), record (c) in the decisions
+file.</pre></details>
+<div class="after"><b>After this step</b><p><strong>What this pass typically catches.</strong> Padded incident counts (documentation screenshots counted as incidents), captions claiming more than the frame shows (&quot;first problem call&quot; when the screenshot only proves an earliest *documented* call), advocacy adjectives, third-party facts framed beyond what the third party actually verifies, and missing adverse documents that the other side certainly holds. Expect to be embarrassed; that is the point. Fix the record, not the reviewer.</p></div></div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">9</span>
+<div><h3 class="step-t">Remove private information</h3>
+<p class="step-d">Scrub anything personal before a document leaves your hands.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 9" onclick="copyStep('p-09', this)">Copy step 9</button>
+<p class="said" id="said-p-09"></p>
+<details><summary>Show the text</summary><pre id="p-09">Prompt:
+
+Redact &lt;document&gt; for scope &lt;A|B&gt;. Method: rasterize each page, draw opaque boxes,
+rebuild the PDF from the rasters — never rely on PDF annotation layers, which can
+be lifted. After redacting, render every page back to me as images at readable
+zoom over each boxed region so I can verify no partial characters leak at the box
+edges. List every field you covered and every field you deliberately left visible,
+and wait for my approval before the file goes anywhere.
+
+Also sweep the whole publishable set: grep every HTML/PDF/CSV output for my last
+names, address, phone numbers, email, account numbers, and (for scope B) VIN and
+case numbers, and strip EXIF from every image. Report matches before fixing.</pre></details>
+<div class="after"><b>After this step</b><p><strong>Publishing the method itself.</strong> If you plan to share your template/method publicly (like this repo): publish BEFORE signing any settlement, keep it 100% generic, and don&#x27;t link it from the case site or the case site from it. Whether to attach your name is a real choice — credibility versus permanence — and it is yours, not the assistant&#x27;s.</p></div></div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">10</span>
+<div><h3 class="step-t">Write the email that sends it</h3>
+<p class="step-d">Short cover message, and how to tell whether anyone read it.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 10" onclick="copyStep('p-10', this)">Copy step 10</button>
+<p class="said" id="said-p-10"></p>
+<details><summary>Show the text</summary><pre id="p-10">Draft the cover email to my case manager. Requirements:
+
+- First sentence states what I am asking for (repurchase of the vehicle, case #).
+- One short paragraph: what the linked site contains and that the same record is
+  attached as a PDF. Site URL + the reviewer credential, written plainly.
+- Name where the key artifact is (&quot;the component ledger is on page 1&quot;).
+- Reference the diagnostic-records request as an attachment, one sentence.
+- If a legal standard must be named at all, it appears here, once, factually —
+  attributed to their own stated position — and nowhere else.
+- Answer anything they asked in a previous email that is still open.
+- If a decision date exists, close by confirming it.
+- No adjectives, no history lesson, no threats. Under 200 words if possible.
+
+List exactly which files I attach and where they are on my machine.</pre></details>
+<div class="after"><b>After this step</b><p><strong>Sending mechanics.</strong> - Reply in the existing thread; don&#x27;t start a new one.</p>
+<ul><li>Send at the start of their business day, early in the week.</li><li>Know that links in the email may appear wrapped by mail-security redirectors on their side; that&#x27;s normal.</li></ul></div></div></div>
+</section>
+
+<section class="sec">
+<h2>What a finished one looks like</h2><hr class="rule">
+<p class="lede" style="margin-top:0">There is a complete demonstration case file —
+made up, but the real shape of the result.</p>
+<p style="margin-top:12px"><a class="tool" style="display:inline-flex;padding:14px 20px"
+href="/lemon-case-file/">See the example</a></p>
+</section>
+
+<section class="sec">
+<div class="note"><b>Not legal advice</b>
+This is a method for organizing your own evidence. It is not a lawyer and cannot
+tell you whether you will win. Deadlines are real and they vary by state — never
+take one from here, always check it against the official source. If what you are
+facing is serious, bring the record you build to a lawyer. That is half of what it
+is for. Your state bar association and <a href="https://www.lawhelp.org">lawhelp.org</a>
+can point you to free and low-cost help.</div>
+</section>
+
+</div>
+<footer><div class="fw">
+<a href="/">buildtherecord.org</a> &middot; <a href="/start.html">Start over</a>
+&middot; Free and open. Volunteer-run.
+</div></footer>
+<script>
+function copyStep(id, btn){
+  var el = document.getElementById(id);
+  var txt = el.textContent;
+  var note = document.getElementById('said-' + id);
+  function ok(){ note.textContent = 'Copied. Now open your assistant below and paste.';
+                 btn.textContent = 'Copied \u2713'; setTimeout(function(){
+                 btn.textContent = btn.getAttribute('data-label'); }, 2600); }
+  function fail(){ note.textContent = 'Could not copy automatically \u2014 open the prompt below, then press and hold to select it.'; }
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(txt).then(ok, function(){ legacy(); });
+  } else { legacy(); }
+  function legacy(){
+    try{
+      var ta = document.createElement('textarea');
+      ta.value = txt; ta.setAttribute('readonly','');
+      ta.style.position='fixed'; ta.style.top='0'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, 999999);
+      var good = document.execCommand('copy'); document.body.removeChild(ta);
+      good ? ok() : fail();
+    } catch(e){ fail(); }
+  }
+}
+</script>
+</body></html>

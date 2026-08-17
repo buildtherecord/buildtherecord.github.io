@@ -1,0 +1,433 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://buildtherecord.org/guide/contractor.html">
+<title>Contractor took your money — Build the Record</title>
+<meta name="description" content="Step-by-step, on your phone. You hired someone for work on your home, paid them, and the work is unfinished, defective, or never started.">
+<style>
+:root{--ink:#111;--mut:#555;--hair:#111;--soft:#dcdcdc;--wash:#f4f4f4;}
+*{box-sizing:border-box;-webkit-text-size-adjust:100%;}
+body{font:17px/1.6 -apple-system,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:var(--ink);margin:0;background:#fff;}
+a{color:var(--ink);text-underline-offset:2px;}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px 80px;}
+.crumb{font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:22px 0 0;}
+.mast{border-bottom:2px solid var(--hair);padding:14px 0 22px;margin-bottom:8px;}
+.mast h1{font-size:clamp(26px,6.5vw,38px);line-height:1.1;margin:0 0 10px;
+  letter-spacing:-.01em;text-transform:uppercase;}
+.who{font-size:16px;color:var(--mut);margin:0;}
+.urgent{border:2px solid var(--ink);padding:14px 16px;margin:24px 0 0;font-size:15.5px;}
+.urgent b{text-transform:uppercase;font-size:12px;letter-spacing:.14em;display:block;margin-bottom:5px;}
+.sec{margin-top:38px;}
+.sec>h2{font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 4px;font-weight:700;}
+.rule{border:0;border-top:1px solid var(--hair);margin:0 0 18px;}
+.lede{font-size:16.5px;max-width:620px;}
+ol.plain{padding-left:20px;margin:0;}
+ol.plain li{margin-bottom:10px;}
+.step{border:1px solid var(--hair);margin:0 0 18px;}
+.step-h{display:flex;gap:14px;padding:16px 16px 12px;align-items:baseline;}
+.step-n{font:700 13px/1 ui-monospace,SFMono-Regular,Menlo,monospace;
+  border:1px solid var(--ink);padding:6px 8px;flex:none;}
+.step-t{margin:0;font-size:18px;line-height:1.3;}
+.step-d{color:var(--mut);font-size:14.5px;margin:2px 0 0;}
+.step-b{padding:0 16px 16px;}
+.btn{display:block;width:100%;border:2px solid var(--ink);background:var(--ink);color:#fff;
+  font:700 15px/1 inherit;letter-spacing:.06em;text-transform:uppercase;
+  padding:16px;cursor:pointer;text-align:center;border-radius:0;
+  -webkit-appearance:none;min-height:52px;}
+.btn:active{background:#fff;color:var(--ink);}
+.btn.sec2{background:#fff;color:var(--ink);margin-top:9px;}
+.btn.sec2:active{background:var(--ink);color:#fff;}
+.said{font-size:13.5px;color:var(--mut);text-align:center;margin:9px 0 0;min-height:19px;}
+details{margin-top:12px;border-top:1px solid var(--soft);padding-top:11px;}
+summary{font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;
+  cursor:pointer;padding:13px 0;min-height:44px;display:flex;align-items:center;}
+pre{white-space:pre-wrap;word-wrap:break-word;overflow-wrap:break-word;background:var(--wash);
+  border:1px solid var(--soft);padding:14px;font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;
+  margin:10px 0 0;}
+.after{background:var(--wash);border-left:3px solid var(--ink);padding:11px 14px;margin-top:12px;font-size:14.5px;}
+.after b{text-transform:uppercase;font-size:11px;letter-spacing:.14em;display:block;margin-bottom:4px;}
+.after p{margin:0 0 8px;} .after p:last-child{margin:0;}
+.after ul{margin:0;padding-left:18px;}
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px;}
+.tool{border:1px solid var(--hair);padding:14px 10px;text-align:center;font-size:14px;
+  text-decoration:none;font-weight:700;min-height:50px;display:flex;align-items:center;justify-content:center;}
+.tool:active{background:var(--ink);color:#fff;}
+.note{border:1px solid var(--hair);padding:15px 17px;font-size:14.5px;}
+.note b{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:5px;}
+footer{background:var(--ink);color:#fff;margin-top:56px;}
+footer .fw{max-width:720px;margin:0 auto;padding:22px 20px;font-size:13.5px;}
+footer a{color:#fff;}
+code{background:var(--wash);padding:1px 4px;font-size:.92em;}
+@media(min-width:620px){ .tools{grid-template-columns:repeat(4,1fr);} }
+</style></head><body>
+<div class="wrap">
+<div class="crumb"><a href="/">Build the Record</a> / <a href="/start.html">Start</a></div>
+<header class="mast">
+<h1>Contractor took your money</h1>
+<p class="who">You hired someone for work on your home, paid them, and the work is unfinished, defective, or never started.</p>
+</header>
+
+<section class="sec">
+<h2>How this works</h2><hr class="rule">
+<ol class="plain">
+<li><strong>Open an AI assistant</strong> in another tab or app. Claude, ChatGPT,
+Gemini and Perplexity all have free versions. Any of them works.</li>
+<li><strong>Copy step 0 below and paste it in.</strong> That sets the rules.</li>
+<li><strong>Work through the steps in order.</strong> Copy, paste, then answer its
+questions and give it your documents when it asks.</li>
+</ol>
+<p class="lede" style="margin-top:14px">Each step builds on the one before it, so
+order matters. You do not have to finish in one sitting — the assistant can pick up
+where you left off if you tell it what you already did. Expect several hours across
+several days, not minutes.</p>
+<div class="tools"><a class="tool" href="https://claude.ai/" target="_blank" rel="noopener">Claude</a><a class="tool" href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT</a><a class="tool" href="https://gemini.google.com/" target="_blank" rel="noopener">Gemini</a><a class="tool" href="https://www.perplexity.ai/" target="_blank" rel="noopener">Perplexity</a></div>
+</section>
+
+<section class="sec">
+<h2>Step 0 — the rules</h2><hr class="rule">
+<div class="step">
+<div class="step-h"><span class="step-n">0</span>
+<div><h3 class="step-t">Paste this first, before anything else</h3>
+<p class="step-d">Tells the assistant how to behave: no invented facts, no guessing, quote things exactly.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 0" onclick="copyStep('p-00', this)">Copy step 0</button>
+<p class="said" id="said-p-00"></p>
+<details><summary>Show the text</summary><pre id="p-00">You are helping me build a contractor-dispute case file. Non-negotiable:
+1. Never state a fact without a document, payment record, dated photo, or
+   logged message behind it. Quote their words verbatim or not at all.
+2. Every amount and day-count in any output is computed from the ledger with
+   an assertion that fails on mismatch.
+3. My own bad facts go IN the counsel-only file, plainly listed — never
+   silently dropped, never in anything we send out.
+4. Where my own records conflict, list the conflict; do not reconcile it away.
+5. State facts; no legal argument and no adjectives in anything sent out.
+6. Check whether my state has a right-to-cure or home-repair statute before
+   any demand or filing is drafted, and tell me what it requires.
+7. Keep an append-only decisions file of every ruling I make.</pre></details>
+</div></div>
+</section>
+
+<section class="sec">
+<h2>The steps</h2><hr class="rule">
+<div class="step">
+<div class="step-h"><span class="step-n">1</span>
+<div><h3 class="step-t">Read the contract for what is missing</h3>
+<p class="step-d">Many home-repair contracts are missing terms the law requires.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 1" onclick="copyStep('p-01', this)">Copy step 1</button>
+<p class="said" id="said-p-01"></p>
+<details><summary>Show the text</summary><pre id="p-01">Read every contract document in my dispute — quotes, proposals, signed pages,
+change orders, and any text/email where scope or price was agreed.
+
+Produce the anatomy:
+1. WHAT IT SAYS: parties as written; total price and how it breaks down by
+   scope; payment schedule and triggers, quoted verbatim; scope description,
+   verbatim; anything about permits, insurance, warranties.
+2. WHAT IT LACKS, as a checklist with implications: completion date or
+   schedule? change-order process? termination clause? arbitration clause?
+   attorney-fee provision? lien-waiver terms? license number on the document?
+   For each absence, one sentence on what standard fills the gap (e.g. no
+   completion date → performance within a reasonable time, evidenced by their
+   own promises — see prompt 03).
+3. FORMATION FACTS: who signed what and when; whether any statutory writings
+   my state requires for home-repair work (written contract thresholds,
+   consumer-rights disclosures) were provided — list what was never given.
+4. CHANGE ORDERS: each one — scope, amount, whether written or inferred from
+   messages, and whether the underlying need was caused by their own defective
+   work (those are contested items, not agreed debts; mark them).
+
+Rules: quote, don&#x27;t paraphrase; page-cite everything; where a term exists only
+in a text message, that message is the exhibit.</pre></details>
+<div class="after"><b>After this step</b><p>The gaps list drives strategy: no arbitration clause keeps small claims open; no fee clause means every escalation costs you your own fees — factor that into the demand number.</p></div></div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">2</span>
+<div><h3 class="step-t">Compare what you paid to what you got</h3>
+<p class="step-d">Money out versus work actually completed, line by line.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 2" onclick="copyStep('p-02', this)">Copy step 2</button>
+<p class="said" id="said-p-02"></p>
+<details><summary>Show the text</summary><pre id="p-02">From primary records only — bank statements, Zelle/Venmo confirmations, check
+images, receipts — build the payment ledger: date, amount, method, reference,
+payee as shown, and the scope item it paid for (from the contract anatomy and
+surrounding messages).
+
+Then compute the exposure table, every number asserted:
+- Paid, work completed and sound.
+- Paid, work performed but corrected/redone by third parties — with my
+  corrective costs beside it (their invoices are exhibits).
+- Paid, work never begun — the deposit-to-unstarted-scope number, isolated
+  and exact. This is usually the demand.
+- Claimed owed by them, unverified — list their asserted balances separately;
+  we neither adopt nor ignore them.
+
+Flag every conflict inside my own records (a remembered cash payment with no
+record, a transfer whose purpose is unclear) in a CONFLICTS section — listed,
+not reconciled.</pre></details>
+<div class="after"><b>After this step</b><p>The cleanest claim is money paid for scope never begun. Keep it unmixed with defect claims in every document we produce; blended demands are easier to refuse.</p></div></div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">3</span>
+<div><h3 class="step-t">Track every promise and when it broke</h3>
+<p class="step-d">Each date they gave you, and what happened on that date.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 3" onclick="copyStep('p-03', this)">Copy step 3</button>
+<p class="said" id="said-p-03"></p>
+<details><summary>Show the text</summary><pre id="p-03">Sweep every text thread and email with the contractor. Extract every statement
+about schedule — start dates, durations, &quot;next week,&quot; &quot;a few weeks out,&quot; crew and
+subcontractor availability — each QUOTED VERBATIM with who said it and the
+date. Alongside, place what actually happened on the ground (from photos,
+visits, and the work record).
+
+Build the promise ledger: date of promise → the promise, verbatim → the date
+it implied → what happened by that date → the next promise. Compute the
+pattern facts: how many distinct start commitments; the span from first
+promise to today; instances where the same interval was re-promised after it
+lapsed (the same &quot;three weeks&quot; promised on &lt;date&gt; and again &lt;N&gt; days later).
+
+Same sweep for MY side: every deadline I set in writing and what I said would
+follow; their responses to each, verbatim.
+
+Rules: no characterization (&quot;stringing us along&quot;) anywhere — the ledger&#x27;s
+juxtaposition does that work by existing.</pre></details>
+<div class="after"><b>After this step</b><p>This artifact usually decides the dispute&#x27;s story: performance vs. a pattern of resetting promises. It&#x27;s also the exhibit a small-claims judge reads fastest.</p></div></div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">4</span>
+<div><h3 class="step-t">Document the actual work</h3>
+<p class="step-d">Photos and their own words about the state of the job.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 4" onclick="copyStep('p-04', this)">Copy step 4</button>
+<p class="said" id="said-p-04"></p>
+<details><summary>Show the text</summary><pre id="p-04">Assemble the physical-work evidence:
+
+1. PHOTO/VIDEO CATALOG: every dated capture of the work — state before, during,
+   after; defects; site conditions. Same discipline as the sibling repos: date
+   from metadata where possible, one factual sentence describing only what is
+   visible, duplicates marked, honest grading.
+2. DEFECT LIST: each claimed defect — what, where, first observed, the capture
+   or report that shows it, and its status (open / corrected by them /
+   corrected by third party at my cost).
+3. THIRD-PARTY RECORD: every professional who touched or assessed the work —
+   trade, what they found (their words, from their invoice/report/message),
+   what correction cost. Ask any professional whose findings exist only
+   verbally to put them in writing now.
+4. ADVERSE ADMISSIONS: sweep their messages for responses to my defect
+   reports — everything they conceded, offered to redo, or did not dispute
+   when itemized to them. Quote exactly, with dates. An itemized complaint
+   answered by &quot;we can come back and change that&quot; is an exhibit.</pre></details>
+<div class="after"><b>After this step</b><p>If work is ongoing or the site is changing, photograph systematically NOW — wide shots for context, close-ups for defects, one sweep per area — before weather, other trades, or their return crew changes the record.</p></div></div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">5</span>
+<div><h3 class="step-t">Pull the public permit record</h3>
+<p class="step-d">Permits and inspections are public. They often contradict the story.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 5" onclick="copyStep('p-05', this)">Copy step 5</button>
+<p class="said" id="said-p-05"></p>
+<details><summary>Show the text</summary><pre id="p-05">Compile the public-records file for my project and contractor:
+
+1. PERMITS: my address&#x27;s permit history from the city/county portal — permit
+   numbers, scope as written, issue dates, status, and the inspection record:
+   what passed, what failed, what was never called for. Screenshot with dates;
+   note the portal URL and pull date on each capture.
+2. WHO PULLED WHAT: which permits were pulled by the contractor vs. by me as
+   owner, and whether performed work matches permitted scope. If any work that
+   required a permit has none, note it factually — and flag it for counsel
+   BEFORE it is used anywhere, since permit gaps can cut both ways.
+3. LICENSE &amp; REGISTRATION: the contractor&#x27;s license/registration status in my
+   state and city, exactly as the registry shows it, with any conditions or
+   disciplinary history.
+4. BOND &amp; INSURANCE: any contractor bond on file (bond claims are a real
+   recovery path), and the certificate of insurance if I have one.
+5. COMPLAINT HISTORY: license-board or consumer-agency complaint records
+   available publicly or by records request; court dockets in my county for
+   the contractor&#x27;s business names.
+
+Every item: source, pull date, and the capture as an exhibit. State only what
+each record shows.</pre></details>
+<div class="after"><b>After this step</b><p>Diary a re-pull the week anything is filed — statuses change, and &quot;permit EXPIRED, no inspections passed, as of &lt;date&gt;&quot; must be current when cited.</p></div></div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">6</span>
+<div><h3 class="step-t">Write the demand letter</h3>
+<p class="step-d">A factual letter stating what you paid, what you got, and what you want.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 6" onclick="copyStep('p-06', this)">Copy step 6</button>
+<p class="said" id="said-p-06"></p>
+<details><summary>Show the text</summary><pre id="p-06">Draft the demand letter from the bundle. Requirements:
+
+- One page if possible. Facts, dates, and numbers only — every one asserted
+  against the ledger.
+- Recite the spine in four or five sentences: contract and price; what was
+  paid; the specific scope never begun / the specific defects (whichever this
+  demand addresses); the promise record in one sentence with one verbatim
+  quote at most.
+- THE DEMAND: the exact number and what it is (e.g. return of the deposit
+  paid toward scope never commenced); the payment method; the deadline
+  (a real date, 7–14 days).
+- THE RESERVATION: all other claims — defects, corrective costs, financing
+  costs, statutory claims — expressly reserved, not waived, not discussed.
+- The consequence sentence: absent payment by the deadline, I will pursue
+  available remedies without further notice. No threats beyond that; no
+  adjectives anywhere.
+- Check my state&#x27;s right-to-cure / home-repair statute first and tell me if
+  this letter must take a specific statutory form or precede suit by a set
+  period.
+
+Also produce the delivery plan: certified mail + email, and the proof-of-
+delivery record for the bundle (tracking, read receipts).</pre></details>
+<div class="after"><b>After this step</b><p>Calendar the deadline. Silence or a new promise without payment is itself the next entry in the promise ledger — and the trigger for prompt 09.</p></div></div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">7</span>
+<div><h3 class="step-t">Build the packet</h3>
+<p class="step-d">Two versions — a short one to send, a complete one for a lawyer.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 7" onclick="copyStep('p-07', this)">Copy step 7</button>
+<p class="said" id="said-p-07"></p>
+<details><summary>Show the text</summary><pre id="p-07">Build BOTH packets from the same bundle, clearly marked:
+
+**FULL PACKET — RETAINED COUNSEL ONLY.** Everything: contract anatomy, ledgers
+with the conflicts section, promise timeline, work record, public records,
+adverse admissions, all correspondence — plus the counsel-only sections: my
+own bad facts (statements made to keep the project alive, permit
+irregularities on any scope, cash payments), settlement-relevant context, and
+open questions. Filename and every page header carry the counsel-only marking.
+
+**FACTUAL PACKET — fit to share.** Contract, payment ledger and exposure
+table, promise timeline, defect record with third-party reports, public
+records, the demand letter and any response. No analysis, no bad-facts
+section, no privileged material, nothing characterized. This is what goes to
+law-firm intake, the license board, or a small-claims filing.
+
+Mechanics: chronology first, exhibits numbered per the shared scheme, every
+computed number asserted, a one-page cover index on each. Verify no
+counsel-only content leaks into the factual build — diff the two file lists
+and show me.</pre></details>
+<div class="after"><b>After this step</b><p>When shopping for counsel, send the FACTUAL packet. The FULL packet exists so that the lawyer you retain learns everything in the first meeting instead of the worst deposition.</p></div></div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">8</span>
+<div><h3 class="step-t">Attack your own case first</h3>
+<p class="step-d">Have the assistant argue the contractor&#x27;s side, then fix what it finds.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 8" onclick="copyStep('p-08', this)">Copy step 8</button>
+<p class="said" id="said-p-08"></p>
+<details><summary>Show the text</summary><pre id="p-08">Attack my complete package from five perspectives, with specific findings:
+
+1. **The contractor&#x27;s lawyer.** Every payment my ledger can&#x27;t trace, every
+   &quot;defect&quot; without a third-party voice, every place I blended agreed debts
+   with contested change orders, and the best paragraph you&#x27;d write against
+   me — including anything in MY conduct (missed selections, slow responses,
+   my own written concessions) you&#x27;d lead with.
+2. **A small-claims judge with 15 minutes.** Can you find the number, the
+   contract, and the promise pattern in one pass? What made you hunt?
+3. **A law-firm intake attorney.** Would you take this on contingency or
+   hourly? What&#x27;s amateur? What&#x27;s missing that you&#x27;d ask for first?
+4. **The license-board investigator.** Is there conduct here the board acts
+   on, stated factually — or does this read as a private money dispute?
+5. **Another homeowner using this as a template.** What is specific to my
+   case but disguised as method?
+
+Consolidate: fixes-now / decisions-for-me / risks-accepted. Apply, queue,
+record.</pre></details>
+</div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">9</span>
+<div><h3 class="step-t">Know your escalation options</h3>
+<p class="step-d">Licensing board, bond claim, small claims — what each can actually do.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 9" onclick="copyStep('p-09', this)">Copy step 9</button>
+<p class="said" id="said-p-09"></p>
+<details><summary>Show the text</summary><pre id="p-09">The demand deadline passed. Lay out my ladder with what each rung needs from
+the bundle, in order:
+
+1. **License / registration board complaint** — the factual packet&#x27;s public-
+   records and defect sections; what my board can actually do (discipline,
+   restitution orders in some states, nothing in others — check mine and say
+   which). Decision note for me: this rung can end a small contractor&#x27;s
+   business; it is leverage AND escalation, and once filed it is not mine to
+   withdraw quietly.
+2. **Bond claim** — if a bond exists (prompt 05), the claim process, its
+   deadline, and the packet subset it needs.
+3. **Small claims** — my state&#x27;s ceiling vs. my clean number; venue; filing
+   mechanics; the trial folder: contract, exposure table, promise ledger,
+   photos, third-party invoices, public records — each one page-flagged for a
+   15-minute hearing. If my number exceeds the ceiling: the waive-down
+   arithmetic vs. regular court with counsel, stated plainly.
+4. **Consumer-protection route** — whether my state&#x27;s UDAP / home-repair act
+   reaches this conduct and what that adds (fee-shifting changes everything —
+   check and cite).
+
+For each rung: what it costs, how long it takes, what it forecloses, and what
+it preserves. I choose; nothing files without my word.</pre></details>
+</div></div>
+<div class="step">
+<div class="step-h"><span class="step-n">10</span>
+<div><h3 class="step-t">Build a private evidence website</h3>
+<p class="step-d">Optional and technical. Rarely needed.</p></div></div>
+<div class="step-b">
+<button class="btn" data-label="Copy step 10" onclick="copyStep('p-10', this)">Copy step 10</button>
+<p class="said" id="said-p-10"></p>
+<details><summary>Show the text</summary><pre id="p-10">Most contractor disputes resolve on the PDF packets — don&#x27;t build
+infrastructure the dispute doesn&#x27;t need. A password-gated site (the kit in
+`site/`, shared across the sibling repos) earns its keep when: the record is
+document-heavy (hundreds of photos, long message threads), multiple audiences
+need controlled access (your lawyer, a mediator, an adjuster), or you want an
+access log showing when the other side&#x27;s counsel actually reviewed the record.
+
+---
+
+If warranted: build the case homepage from the bundle per the sibling repos&#x27;
+pattern — abstract, the record in plain language, the exposure table, the
+promise timeline as a swimlane strip, the photo grid with full-resolution
+originals one click away, public-records section, and the factual packet as a
+download. Same rules: every count asserted at build, exhibit numbers matching
+the PDF, no external requests, credentials per audience, rotate when the
+matter closes. The FULL packet and anything counsel-only NEVER goes on the
+site, under any credential.</pre></details>
+</div></div>
+</section>
+
+<section class="sec">
+<h2>What a finished one looks like</h2><hr class="rule">
+<p class="lede" style="margin-top:0">There is a complete demonstration case file —
+made up, but the real shape of the result.</p>
+<p style="margin-top:12px"><a class="tool" style="display:inline-flex;padding:14px 20px"
+href="/contractor-case-file/">See the example</a></p>
+</section>
+
+<section class="sec">
+<div class="note"><b>Not legal advice</b>
+This is a method for organizing your own evidence. It is not a lawyer and cannot
+tell you whether you will win. Deadlines are real and they vary by state — never
+take one from here, always check it against the official source. If what you are
+facing is serious, bring the record you build to a lawyer. That is half of what it
+is for. Your state bar association and <a href="https://www.lawhelp.org">lawhelp.org</a>
+can point you to free and low-cost help.</div>
+</section>
+
+</div>
+<footer><div class="fw">
+<a href="/">buildtherecord.org</a> &middot; <a href="/start.html">Start over</a>
+&middot; Free and open. Volunteer-run.
+</div></footer>
+<script>
+function copyStep(id, btn){
+  var el = document.getElementById(id);
+  var txt = el.textContent;
+  var note = document.getElementById('said-' + id);
+  function ok(){ note.textContent = 'Copied. Now open your assistant below and paste.';
+                 btn.textContent = 'Copied \u2713'; setTimeout(function(){
+                 btn.textContent = btn.getAttribute('data-label'); }, 2600); }
+  function fail(){ note.textContent = 'Could not copy automatically \u2014 open the prompt below, then press and hold to select it.'; }
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(txt).then(ok, function(){ legacy(); });
+  } else { legacy(); }
+  function legacy(){
+    try{
+      var ta = document.createElement('textarea');
+      ta.value = txt; ta.setAttribute('readonly','');
+      ta.style.position='fixed'; ta.style.top='0'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, 999999);
+      var good = document.execCommand('copy'); document.body.removeChild(ta);
+      good ? ok() : fail();
+    } catch(e){ fail(); }
+  }
+}
+</script>
+</body></html>
