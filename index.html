@@ -1,260 +1,112 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="canonical" href="https://buildtherecord.org/">
-<title>Build the Record</title>
-<meta name="description" content="Free methods and AI prompts for building a professional-grade case file — for representing yourself, or for handing your lawyer a running start.">
+<title>Build the Record — free help putting your evidence in order</title>
+<meta name="description" content="Free, step-by-step help organising the evidence in a dispute — a car, a health insurer, a contractor. Works on a phone. No account, no payment.">
 <style>
-:root{--ink:#111;--mut:#555;--hair:#111;--soft:#dcdcdc;}
-*{box-sizing:border-box;}
-body{font:16px/1.65 -apple-system,"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);margin:0;background:#fff;}
-a{color:var(--ink);text-decoration:underline;text-underline-offset:2px;}
-a:hover{background:var(--ink);color:#fff;text-decoration:none;}
-.wrap{max-width:880px;margin:0 auto;padding:0 24px 72px;}
-.mast{border-bottom:2px solid var(--hair);padding:56px 0 28px;margin-bottom:8px;}
-.mast h1{font-size:clamp(40px,7vw,64px);line-height:1.02;margin:0;letter-spacing:-.02em;text-transform:uppercase;}
-.mast .motto{margin-top:14px;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink);}
-.lede{font-size:18px;max-width:640px;margin:26px 0 0;}
-.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;}
-.btn{display:inline-block;border:2px solid var(--ink);padding:12px 22px;font-size:14px;
-  letter-spacing:.08em;text-transform:uppercase;font-weight:700;text-decoration:none;}
-.btn:hover{background:var(--ink);color:#fff;}
-.btn.inv{background:var(--ink);color:#fff;}
-.btn.inv:hover{background:#fff;color:var(--ink);}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;}
-.mcard{border:1px solid var(--hair);display:flex;flex-direction:column;}
-.browser .chrome{background:var(--ink);color:#fff;display:flex;align-items:center;gap:10px;padding:8px 12px;}
-.browser .dots span{display:inline-block;width:9px;height:9px;border:1px solid #fff;border-radius:50%;margin-right:4px;}
-.browser .url{font:11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:#ccc;overflow:hidden;
-  text-overflow:ellipsis;white-space:nowrap;}
-.browser img{width:100%;display:block;border-bottom:1px solid var(--hair);}
-.mbody{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1;}
-.mbody h3{margin:0;font-size:16px;}
-.mbody .d{color:var(--mut);font-size:13.5px;flex:1;}
-.mlinks{display:flex;gap:10px;flex-wrap:wrap;}
-.mlinks .btn{padding:9px 14px;font-size:12px;}
-.sec{margin-top:52px;}
-.sec > h2{font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 4px;font-weight:700;}
-.sec > h2 .no{display:inline-block;min-width:34px;}
-.rule{border:0;border-top:1px solid var(--hair);margin:0 0 22px;}
-.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0;border:1px solid var(--hair);}
-.aud{padding:18px 22px;font-size:15px;}
-.aud + .aud{border-top:1px solid var(--hair);}
-@media(min-width:640px){.aud + .aud{border-top:0;border-left:1px solid var(--hair);}}
-.aud b{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px;}
-table.methods{width:100%;border-collapse:collapse;font-size:15px;border:1px solid var(--hair);}
-.methods th{text-align:left;font-size:11px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid var(--hair);padding:10px 14px;font-weight:700;}
-.methods td{border-bottom:1px solid var(--soft);padding:14px;vertical-align:top;}
-.methods tr:last-child td{border-bottom:0;}
-.methods td:first-child{width:34%;font-weight:700;}
-.methods .d{color:var(--mut);font-size:13.5px;display:block;margin-top:3px;font-weight:400;}
-.doctrine{border-left:3px solid var(--ink);padding:4px 0 4px 22px;font-size:15.5px;max-width:680px;}
-.doctrine p{margin:0 0 12px;}
-.doctrine p:last-child{margin:0;}
-.note{border:1px solid var(--hair);padding:16px 20px;font-size:14px;max-width:680px;}
-.note b{font-size:12px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:6px;}
-.callout{background:var(--ink);color:#fff;padding:34px 30px;}
-.callout h2{color:#fff;opacity:.8;}
-.callout hr.rule{border-top-color:rgba(255,255,255,.3);}
-.callout p{color:#eaeaea;}
-.callout code{background:rgba(255,255,255,.15);padding:1px 5px;}
-.callout .cta{margin-top:22px;}
-.callout .cta .btn{border-color:#fff;color:#fff;}
-.callout .cta .btn:hover{background:#fff;color:var(--ink);}
-.callout .cta .btn.inv{background:#fff;color:var(--ink);padding:18px 34px;font-size:15.5px;}
-.callout .cta .btn.inv:hover{background:transparent;color:#fff;}
-@media(max-width:700px){
-  table.methods,table.methods tbody,table.methods tr,table.methods td{display:block;width:100%;}
-  table.methods thead{display:none;}
-  table.methods tr{border-bottom:1px solid var(--hair);padding:4px 0;}
-  table.methods tr:last-child{border-bottom:0;}
-  table.methods td{border-bottom:0;padding:6px 14px;}
-  table.methods td:first-child{width:auto;font-size:16px;padding-top:14px;}
-  table.methods td:nth-child(2){font:11px/1 ui-monospace,Menlo,monospace;letter-spacing:.1em;
-    text-transform:uppercase;color:var(--mut);}
-  table.methods td:last-child{padding-bottom:14px;}
-  .cta{flex-direction:column;}
-  .cta .btn{text-align:center;}
-}
-footer{background:var(--ink);color:#fff;margin-top:72px;}
-footer .fw{max-width:880px;margin:0 auto;padding:26px 24px;font-size:13px;display:flex;gap:24px;flex-wrap:wrap;justify-content:space-between;}
+:root{--ink:#111;--mut:#555;--soft:#dcdcdc;}
+*{box-sizing:border-box;-webkit-text-size-adjust:100%;}
+body{font:18px/1.6 -apple-system,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:var(--ink);margin:0;background:#fff;}
+a{color:var(--ink);text-underline-offset:2px;}
+.wrap{max-width:640px;margin:0 auto;padding:0 20px 60px;}
+
+.mast{padding:52px 0 26px;}
+h1{font-size:clamp(38px,10vw,58px);line-height:.98;margin:0;letter-spacing:-.02em;text-transform:uppercase;}
+.lede{font-size:19px;margin:20px 0 0;}
+
+.pick{display:block;border:2px solid var(--ink);padding:20px;margin-bottom:12px;
+  text-decoration:none;color:var(--ink);}
+.pick:active,.pick:hover{background:var(--ink);color:#fff;}
+.pick b{display:block;font-size:20px;line-height:1.25;}
+.pick span{display:block;font-size:15px;color:var(--mut);margin-top:4px;}
+.pick:active span,.pick:hover span{color:#ccc;}
+.pick.q{border-style:dashed;}
+.pick.q b{font-size:17px;}
+
+h2{font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin:52px 0 14px;font-weight:700;
+  padding-bottom:8px;border-bottom:1px solid var(--ink);}
+ol.how{padding-left:22px;margin:0;font-size:17px;}
+ol.how li{margin-bottom:14px;}
+.plain{font-size:16px;color:var(--mut);}
+
+.more{border:1px solid var(--ink);padding:4px 20px;margin-top:16px;}
+.more a{display:block;padding:14px 0;font-size:16.5px;border-bottom:1px solid var(--soft);
+  text-decoration:none;}
+.more a:last-child{border-bottom:0;}
+.more a:hover{text-decoration:underline;}
+.more a span{display:block;font-size:14px;color:var(--mut);}
+
+.legal{border:1px solid var(--ink);padding:15px 18px;font-size:14.5px;margin-top:44px;}
+.legal b{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:5px;}
+footer{background:var(--ink);color:#fff;margin-top:48px;}
+footer .fw{max-width:640px;margin:0 auto;padding:22px 20px;font-size:13.5px;}
 footer a{color:#fff;}
-footer a:hover{background:#fff;color:#111;}
 </style></head><body>
 <div class="wrap">
 
 <header class="mast">
 <h1>Build<br>the Record</h1>
-<div class="motto">The record argues by existing</div>
 <p class="lede">Free, step-by-step help putting the evidence in your dispute into
-order &mdash; dated, sourced, quoted exactly. The paper record that makes a company,
-a reviewer, or a lawyer take you seriously. Works on a phone. No account, no
-payment, no GitHub.</p>
-<div class="cta">
-<a class="btn inv" href="/start.html">I have a dispute &mdash; start here</a>
-<a class="btn" href="https://buildtherecord.org/lemon-case-file/">See a finished example</a>
-</div>
+order — so a company, a reviewer, or a lawyer takes you seriously.</p>
 </header>
 
-<section class="sec">
-<h2><span class="no">&sect; 1</span> Start &mdash; pick your situation</h2>
-<hr class="rule">
-<div class="two">
-<div class="aud"><b><a href="/guide/insurance.html">Health insurance denied a claim</a></b>
-They refused to pay for care, or to approve it in advance. Appeals run on a clock
-&mdash; open this today if a letter just arrived.</div>
-<div class="aud"><b><a href="/guide/car.html">A car that keeps breaking</a></b>
-Bought or leased, something keeps going wrong, and the dealer or manufacturer has
-not fixed it.</div>
-</div>
-<div class="two" style="border-top:0">
-<div class="aud"><b><a href="/guide/contractor.html">A contractor took the money</a></b>
-Paid for work on your home and it is unfinished, defective, or never started.</div>
-<div class="aud"><b><a href="/start.html">Not sure / something else</a></b>
-The method is the same for most disputes decided on paper. Start with the closest
-one &mdash; the steps translate.</div>
-</div>
-</section>
+<a class="pick" href="/guide/insurance.html">
+<b>Health insurance denied a claim</b>
+<span>Appeals run on a clock — start today if a letter just arrived</span></a>
 
-<section class="sec">
-<h2><span class="no">&sect; 2</span> What is here</h2>
-<hr class="rule">
-<table class="methods">
-<thead><tr><th>What</th><th>How much</th><th>What it is for</th></tr></thead>
-<tbody>
-<tr><td>Step-by-step guides<span class="d">buildtherecord.org/guide</span></td><td>3</td>
-<td>Copy a step, paste it into any free AI assistant, work through in order. The
-way to actually use this.</td></tr>
-<tr><td>Methods<span class="d">the full written procedure</span></td><td>3 domains<span class="d">30 numbered steps</span></td>
-<td>Vehicle defects, health-insurance denials, contractor disputes. Each one an
-inventory, a timeline, ledgers, a records request, an adversarial pass, a packet.</td></tr>
-<tr><td>Demonstration case files</td><td>3</td>
-<td>Complete, fictional, and the real shape of the output.</td></tr>
-<tr><td>Jurisdiction signposts<span class="d">dated, cited, never a substitute for checking</span></td><td>3<span class="d">Illinois &times;2, ERISA plans</span></td>
-<td>Statutes, deadline rules, bodies. <strong>Thin, and honestly labelled as thin</strong>
-&mdash; adding your state is the most useful contribution there is.</td></tr>
-<tr><td>Worked exemplars<span class="d">real published opinions</span></td><td>3</td>
-<td>Cases where a manufacturer or insurer fought hard and the record decided it.</td></tr>
-<tr><td>Legal-review channel</td><td>open</td>
-<td>An issue form for practitioners. No git needed, ~30&ndash;60 minutes, one file.</td></tr>
-</tbody></table>
-<p style="max-width:680px;margin-top:16px;font-size:14.5px;color:var(--mut)">Everything
-is free and Apache-2.0. Nothing here collects your documents &mdash; the work happens
-between you and whichever AI assistant you choose.</p>
-</section>
+<a class="pick" href="/guide/car.html">
+<b>A car that keeps breaking</b>
+<span>The dealer or manufacturer hasn't fixed it</span></a>
 
-<section class="sec">
-<h2><span class="no">&sect; 3</span> What a finished case file looks like</h2>
-<hr class="rule">
-<p style="max-width:680px;margin-top:0">These are fully fictional, but the shape is
-the real output: the ledger of what they did in their own words, the timeline, the
-evidence grid, every document one click away. They are proof that the method
-produces something, not the place to begin &mdash;
-<a href="/start.html">begin here</a>.</p>
-<div class="cards">
+<a class="pick" href="/guide/contractor.html">
+<b>A contractor took the money</b>
+<span>The work is unfinished, defective, or never started</span></a>
 
-<div class="mcard">
-<div class="browser"><div class="chrome"><span class="dots"><span></span><span></span><span></span></span>
-<span class="url">buildtherecord.org/lemon-case-file</span></div>
-<a href="https://buildtherecord.org/lemon-case-file/"><img src="assets/shot-lemon.jpg" loading="lazy"
-alt="Demonstration lemon-law case file: swimlane timeline and exemplar recordings"></a></div>
-<div class="mbody"><h3>Vehicle defects &amp; lemon law</h3>
-<span class="d">Component ledger · defect timeline · diagnostic-records request · gated evidence site with an access log.</span>
-<div class="mlinks"><a class="btn inv" href="/guide/car.html">Use this &mdash; step by step</a>
-<a class="btn" href="https://buildtherecord.org/lemon-case-file/">Demonstration</a>
-<a class="btn" href="https://github.com/buildtherecord/lemon-case-file">Method</a></div></div>
+<a class="pick q" href="/start.html">
+<b>Something else, or not sure yet</b>
+<span>The method is the same for most disputes decided on paper</span></a>
+
+<h2>How to use this</h2>
+<ol class="how">
+<li><strong>Open a free AI assistant</strong> in another tab — Claude, ChatGPT,
+Gemini, Perplexity. Any of them.</li>
+<li><strong>Copy a step from your guide and paste it in.</strong></li>
+<li><strong>Work through the steps in order.</strong> It asks questions; you
+answer them and hand over your documents.</li>
+</ol>
+<p class="plain" style="margin-top:16px">Expect a few hours across a few days, not
+minutes. Works on a phone. No account, no payment, and nothing you upload here —
+the work happens between you and whichever assistant you pick.</p>
+
+<h2>Worth reading first</h2>
+<div class="more">
+<a href="/notes/ai-invents-cases.html">Your AI will invent a court case
+<span>Why it happens, and the one rule that prevents it</span></a>
+<a href="/notes/capturing-evidence.html">How to capture something so it proves what you need
+<span>A photo proves only what is visible in it</span></a>
+<a href="/notes/you-didnt-get-it.html">What to do when you didn't get the video
+<span>The moment passed. You have more options than you think.</span></a>
 </div>
 
-<div class="mcard">
-<div class="browser"><div class="chrome"><span class="dots"><span></span><span></span><span></span></span>
-<span class="url">buildtherecord.org/health-insurance-case-file</span></div>
-<a href="https://buildtherecord.org/health-insurance-case-file/"><img src="assets/shot-health.jpg" loading="lazy"
-alt="Demonstration insurance appeal file: deadline board and denial ledger"></a></div>
-<div class="mbody"><h3>Health-insurance denials</h3>
-<span class="d">Deadline board · claim-file request · denial ledger · appeal packet · external review. Under 1% of denials are appealed; a third of appeals win.</span>
-<div class="mlinks"><a class="btn inv" href="/guide/insurance.html">Use this &mdash; step by step</a>
-<a class="btn" href="https://buildtherecord.org/health-insurance-case-file/">Demonstration</a>
-<a class="btn" href="https://github.com/buildtherecord/health-insurance-case-file">Method</a></div></div>
+<h2>Everything else</h2>
+<div class="more">
+<a href="/browse.html">Browse everything
+<span>Finished examples, the full methods, notes, jurisdictions, how to contribute</span></a>
 </div>
 
-<div class="mcard">
-<div class="browser"><div class="chrome"><span class="dots"><span></span><span></span><span></span></span>
-<span class="url">buildtherecord.org/contractor-case-file</span></div>
-<a href="https://buildtherecord.org/contractor-case-file/"><img src="assets/shot-contractor.jpg" loading="lazy"
-alt="Demonstration contractor case file: payment-to-scope table and promise ledger"></a></div>
-<div class="mbody"><h3>Contractor disputes</h3>
-<span class="d">Payment-to-scope trace · promise ledger · public permit record · demand letter · two-tier packet for counsel.</span>
-<div class="mlinks"><a class="btn inv" href="/guide/contractor.html">Use this &mdash; step by step</a>
-<a class="btn" href="https://buildtherecord.org/contractor-case-file/">Demonstration</a>
-<a class="btn" href="https://github.com/buildtherecord/contractor-case-file">Method</a></div></div>
-</div>
-
-</div>
-</section>
-
-<section class="sec">
-<h2><span class="no">&sect; 4</span> The doctrine, short form</h2>
-<hr class="rule">
-<div class="doctrine">
-<p>One source of truth: every artifact is generated from a single catalogue, and
-every number is computed and asserted at build time. A document proves only what
-it shows. Quote them verbatim. Curate ruthlessly; never omit what would make you
-look dishonest.</p>
-<p>The counterparty-file principle: whoever decided against you assembled a file
-to do it — request it before you argue with it.</p>
-<p>Adversarial review before sending: have your own case attacked from the other
-side's perspectives, and fix what the hostile reading finds. State facts. The
-record argues by existing.</p>
-</div>
-</section>
-
-<section class="sec">
-<h2><span class="no">&sect; 5</span> Contribute</h2>
-<hr class="rule">
-<p style="max-width:680px">Every method improves when someone runs it. Prompt fixes
-from real use, per-jurisdiction signpost files (dated and cited — see any repo's
-<code>jurisdictions/</code>), and anonymized outcomes are the contributions that
-compound. Real case documents are never accepted: the repositories stay 100%
-synthetic. New domains are welcome where the fitness test holds — disputes decided
-on paper, with a records right, a deadline ladder, and many unrepresented people
-losing by default. Questions, anonymized outcomes, and offers of help:
-<a href="/contact.html">the contact page</a> &middot; <a href="mailto:mailbox@buildtherecord.org">mailbox@buildtherecord.org</a>.</p>
-</section>
-
-<section class="sec callout">
-<h2><span class="no">&sect; 6</span> For lawyers</h2>
-<hr class="rule">
-<p style="max-width:680px;margin-top:0">An hour of a practitioner&rsquo;s time is the
-highest-leverage contribution this project can receive. What helps most: reviewing a
-method for anything that could mislead a layperson in your jurisdiction; a
-<code>jurisdictions/</code> signpost file for your state &mdash; statutes, deadline rules,
-bodies, cited, no advice; telling us where a prompt should say <em>stop &mdash; get
-counsel now</em>; and pointing at the legal-aid and pro-bono channels in your area that
-actually answer. Everything is public under Apache-2.0. Nothing here creates an
-attorney-client relationship, and we will never present a contribution as an
-endorsement of any individual claim.</p>
-<div class="cta" style="margin-top:18px">
-<a class="btn inv" href="/contact.html?type=lawyer">Volunteer an hour</a>
-<a class="btn" href="/contact.html">Contact</a>
-</div>
-</section>
-
-<section class="sec">
-<div class="note" style="margin-bottom:22px"><b>Volunteer-run — no response guarantee</b>
-This is an unfunded project with nobody on duty. Issues and email are read, but
-replies are not guaranteed and can take a long time. Nothing here depends on that:
-the methods, the <a href="/start.html">step-by-step guides</a>, and the
-demonstrations are complete and free to use without contacting anyone.</div>
-<div class="note"><b>Not legal advice</b>
-These are methods for organizing evidence and process, not a substitute for a
-lawyer. Deadlines are real and jurisdiction-specific; the repositories' own rule
-is that no deadline is ever taken from a template — everything is re-verified
-against primary sources at use. When the stakes are high, bring the record to
-counsel. That is half of what it is for.</div>
-</section>
+<div class="legal"><b>Not legal advice</b>
+This is a method for organising your own evidence. It cannot tell you whether you
+will win. Deadlines vary by state — never take one from here without checking it
+against the official source. When the stakes are high, bring what you build to a
+lawyer; that is half of what it is for.
+<a href="https://www.lawhelp.org">lawhelp.org</a> lists free and low-cost help.</div>
 
 </div>
 <footer><div class="fw">
-<span>Apache-2.0 · <a href="https://github.com/buildtherecord">github.com/buildtherecord</a> · <a href="/contact.html">Contact</a> &middot; <a href="mailto:mailbox@buildtherecord.org">mailbox@buildtherecord.org</a></span>
-<span>Free and open. Volunteer-run.</span>
+<a href="/browse.html">Everything</a> &middot;
+<a href="https://github.com/buildtherecord">Open source</a> &middot;
+<a href="/contact.html">Contact</a> &middot;
+Free and open. Volunteer-run.
 </div></footer>
 </body></html>
