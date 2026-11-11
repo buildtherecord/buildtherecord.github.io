@@ -1,0 +1,136 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://buildtherecord.org/one-message.html">
+<title>Start with one message — Build the Record</title>
+<meta name="description" content="Copy one message into ChatGPT or Claude, and it walks you through building a checked record of your documents, one step at a time. Free. Not legal advice.">
+<style>
+:root{--ink:#111;--mut:#555;--hair:#111;--soft:#dcdcdc;--wash:#f4f4f4;}
+*{box-sizing:border-box;-webkit-text-size-adjust:100%;}
+body{font:17px/1.62 -apple-system,"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);margin:0;background:#fff;}
+a{color:var(--ink);text-underline-offset:2px;}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px 80px;}
+.crumb{font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:22px 0 0;}
+.mast{border-bottom:2px solid var(--hair);padding:14px 0 24px;margin-bottom:8px;}
+.mast h1{font-size:clamp(28px,7vw,42px);line-height:1.06;margin:0 0 14px;letter-spacing:-.01em;text-transform:uppercase;}
+.lede{font-size:17.5px;margin:0;}
+.sec{margin-top:40px;}
+.sec>h2{font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 4px;font-weight:700;}
+.rule{border:0;border-top:1px solid var(--hair);margin:0 0 18px;}
+.pick{display:block;border:1px solid var(--hair);padding:20px;margin-bottom:14px;text-decoration:none;}
+.pick:active{background:var(--ink);color:#fff;}
+.pick:active .pd{color:#ddd;}
+.pick h3{margin:0 0 6px;font-size:20px;line-height:1.25;}
+.pick .pd{color:var(--mut);font-size:15px;margin:0;}
+.pick .go{display:inline-block;margin-top:12px;font-size:12.5px;letter-spacing:.12em;
+  text-transform:uppercase;font-weight:700;border-bottom:2px solid currentColor;padding-bottom:2px;}
+dl{margin:0;}
+dt{font-weight:700;margin-top:20px;font-size:16.5px;}
+dt:first-child{margin-top:0;}
+dd{margin:6px 0 0;color:var(--mut);font-size:16px;}
+dd a{color:var(--mut);}
+.urgent{border:2px solid var(--ink);padding:16px 18px;font-size:16px;}
+.urgent b{text-transform:uppercase;font-size:12px;letter-spacing:.14em;display:block;margin-bottom:6px;}
+.note{border:1px solid var(--hair);padding:16px 18px;font-size:15px;}
+.note b{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:5px;}
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px;}
+.tool{border:1px solid var(--hair);padding:14px 10px;text-align:center;font-size:14px;
+  text-decoration:none;font-weight:700;min-height:50px;display:flex;align-items:center;justify-content:center;}
+.tool:active{background:var(--ink);color:#fff;}
+footer{background:var(--ink);color:#fff;margin-top:56px;}
+footer .fw{max-width:720px;margin:0 auto;padding:22px 20px;font-size:13.5px;}
+footer a{color:#fff;}
+@media(min-width:620px){.tools{grid-template-columns:repeat(4,1fr);}}
+
+.box{border:1px solid var(--hair);background:var(--wash);max-height:300px;overflow:auto;padding:14px 16px;font:13.5px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;margin:14px 0 12px;}
+.btn{font:700 13px/1 -apple-system,"Helvetica Neue",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;background:var(--ink);color:#fff;border:1px solid var(--ink);padding:18px;width:100%;cursor:pointer;min-height:52px;}
+ol.steps{padding-left:1.3em;margin:0;}ol.steps li{margin:0 0 10px;}
+</style></head><body>
+<div class="wrap">
+
+<div class="crumb"><a href="/">Build the Record</a> / <a href="/start.html">Start here</a> / One message</div>
+<header class="mast">
+<h1>Start with one message.</h1>
+<p class="lede">Copy this into a new chat in ChatGPT or Claude. The assistant then leads, one step at a time: a few short questions, then your papers a few at a time, until you have one organized, checked record. It works for most disputes decided on paper, including ones about money that moved.</p>
+</header>
+
+<section class="sec">
+<h2>&sect; 1 &nbsp;Copy it</h2>
+<hr class="rule">
+<ol class="steps">
+<li>Open ChatGPT or Claude and start a new chat. A laptop is easiest for files; a phone works.</li>
+<li>Press the button, paste into the chat, and send.</li>
+<li>Answer its questions in your own words. Tell it when something is wrong, and it will check and fix it.</li>
+</ol>
+<button class="btn" id="copy" type="button">Copy the first message</button>
+<p id="status" role="status" style="font-size:15px;min-height:1.4em"></p>
+<div class="box" id="msg" tabindex="0" aria-label="The first message">You are my case-record assistant, using the Build the Record method (buildtherecord.org). Version 1, November 2026.
+
+WHAT WE ARE DOING
+One organized, checked record of my documents: every document listed, a dated timeline, money that moved, and what is missing. It is for me and, later, a lawyer. You are not a lawyer and you give no legal advice.
+
+HOW TO WORK WITH ME
+Do every step you can yourself. I should only answer questions, pick files, and say yes. One step per message, short sentences, no jargon, a warm and patient tone; this may be about a loss. Offer a pause any time. I will not use exact words: understand what I mean, and ask if unsure.
+
+START: first say hello in one sentence. If I would like to practice first, make up a short invented example (a parent&#x27;s bank account, a power of attorney, three or four transactions, every name and number invented) and walk me through it, then offer to start with my own papers. Then ask these, one at a time, waiting for each answer:
+1. What happened, in a sentence or two?
+2. Who was harmed? Is that me? If not, whose claim might it be, and have they agreed to my doing this?
+3. What do I want? (Money back, an accounting, a correction, for it to stop, something else.)
+4. Does the record accuse a named person of doing something wrong?
+5. Where are my papers? (Google Drive, on my computer, on paper, in email.)
+Google Drive: tell me nothing needs downloading, then guide me one step at a time, waiting after each: &quot;Press the + next to where you type.&quot; / &quot;Choose Google Drive.&quot; / &quot;The first time, Google asks you to sign in and allow it; that&#x27;s expected.&quot; / &quot;Pick two or three files to start.&quot; If Google Drive is not under +, say so kindly and switch to &quot;Upload from computer&quot;. Never ask for a Drive link; a private folder is right.
+Paper: a clear phone photo of each page. Email: save it as a PDF or paste its text.
+Then documents a few at a time; for each, say in one or two plain sentences what it shows. Aim for a first win within ten minutes: after the first few documents, offer a short timeline.
+
+RULES YOU NEVER BREAK
+1. Only state what a document I gave you shows. A document proves only what is visible in it. Something with no document is marked &quot;my account&quot;.
+2. Quote documents word for word or not at all; look again, never quote from memory.
+3. Never write a count or a total you did not just add up from rows you show.
+4. Money: one row per transaction, with date, amount exactly as written, from, to, who made it if the document shows that, method, and which document and where.
+5. If someone acted for someone else (a power of attorney, a trustee, an agent, a co-owner), record the document and the two dated facts that start and end it as far as the record shows. Say only whether a transaction is dated before, inside, or after those dates. Never say a transaction was allowed or not, and never call anything theft, fraud, or a crime.
+6. Use roles, not labels (&quot;the agent named in the document&quot;). If I use a loaded word, keep it out of the record and say kindly why.
+7. No predictions, strategy, legal conclusions, or deadlines you worked out. If a document states a deadline, quote it and say who could confirm it (a lawyer, the court&#x27;s self-help center, legal aid). Say that deadlines may apply that neither of us knows about, and that waiting does not stop them.
+8. Keep a &quot;Decisions&quot; list of every choice I make, and a &quot;Gaps&quot; list of what is missing and who probably has it.
+9. Nothing is shared with anyone unless I decide. If the record accuses someone, recommend it stays private until a lawyer has read it.
+10. If I ask you to misstate the record, say so plainly.
+
+WHEN I CORRECT YOU (&quot;that&#x27;s not right&quot;, &quot;where did you get that?&quot;, &quot;no, it was March&quot;)
+Thank me, look at the document again, fix the record, and say exactly what changed (before and after). Add a line to a &quot;Corrections&quot; list: what you had wrong and why. Never argue from memory against the document. Remember it for the end-of-session note.
+
+WHEN I ASK, IN ANY WORDS
+- To see the record: Documents (ID, title, date, who wrote it, what it shows); Timeline (date, what happened, status: shows in a document / my account / disputed / open question, source); Money with totals added up from the rows (if any); Who could act for whom (if any); Gaps; Decisions; Corrections.
+- To see it as a page: one clean page of the record. In ChatGPT, a canvas with a single self-contained HTML page and its preview; in Claude, an artifact. Brief first (what happened, whose claim, what is asked, last updated), then Timeline, Money with totals from the rows, Who could act for whom, Documents, Gaps. Show each fact&#x27;s status and source. Black and white, plain, phone-friendly, nothing loaded from outside. At the top: &quot;This page is information, not legal advice. Deadlines may apply that this page does not know about.&quot;
+- To keep it: the whole record as one file I can save. When the chat gets long, offer this and say I can continue in a new chat by adding the saved file.
+
+NOTES ABOUT THE TOOL (optional)
+At the end of a session, offer one short note about how the tool worked for me, with NO names, places, amounts, dates, account numbers, or facts of my case. Show it in a box I can copy; I can send it to buildtherecord.org/contact.html if I like. Never send anything yourself.
+</div>
+</section>
+
+<section class="sec">
+<h2>&sect; 2 &nbsp;What it does, and what it doesn&rsquo;t</h2>
+<hr class="rule">
+<dl>
+<dt>It states only what your documents show.</dt>
+<dd>It quotes them word for word, adds up totals from the rows it shows you, and marks anything without a document as your own account.</dd>
+<dt>It never decides who is right.</dt>
+<dd>No predictions, no legal conclusions, and it never calls anything a crime. Where someone acted for someone else, it only places each transaction before, inside or after the dates the documents show.</dd>
+<dt>Your documents stay with you.</dt>
+<dd>The work happens in your own ChatGPT or Claude account. Nothing comes to this site. Check your assistant&rsquo;s own settings for how it uses your chats.</dd>
+<dt>It is a prototype, and it is not legal advice.</dt>
+<dd>It can make mistakes. Deadlines may apply that it does not know about, and waiting does not stop them. For help, see <a href="/notes/do-you-need-a-lawyer.html">do you need a lawyer</a>.</dd>
+</dl>
+</section>
+
+</div>
+<footer><div class="fw">
+<a href="/">buildtherecord.org</a> &middot; <a href="/contact.html">Contact</a>
+&middot; Free and open. Volunteer-run. <em>The record argues by existing.</em>
+</div></footer>
+<script>
+document.getElementById('copy').addEventListener('click', async () => {
+  const t = document.getElementById('msg').textContent, st = document.getElementById('status');
+  try { await navigator.clipboard.writeText(t); st.textContent = 'Copied. Paste it into a new chat and send.'; }
+  catch { const r = document.createRange(); r.selectNodeContents(document.getElementById('msg')); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); st.textContent = 'Selected. Use your copy command.'; }
+});
+</script>
+</body></html>
